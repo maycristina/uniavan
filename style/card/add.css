@@ -62,6 +62,11 @@
 
 /**/
 
+.box-add-new-member p{
+    margin:3px 0 0 0;
+}
+
+
 .box-add-new-member{
     border:1px solid #A3A5AA;
     color: #6F727A;
@@ -75,6 +80,7 @@
     border: 1px solid #B7B9B9;
     border-radius: 8px;
     outline: none !important;
+   
 }
 .box-add-new-member a{
     color: rgba(183, 185, 185, 0.8);
@@ -98,8 +104,8 @@
     border: 1px solid #4b4b4b;
     font-size: 1rem;
     font-weight: 400;
-    height: 32px !important;
-    width: 250px !important;
+    height: 32px !important;/* 
+    width: 250px !important; */
 }
 
 
@@ -128,6 +134,10 @@
     margin: -100px 0 0 0;
 }
 
+.profile{
+    background: url(/img/profile.png) repeat center !important;
+    background-size:contain !important;
+}
 
 .alt svg{
     margin: 7px 0 0 -22px !important;

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logo-favicon.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/style/main.css">
+    <link rel="stylesheet" href="/style/nav/header.css">
+    <link rel="stylesheet" href="/style/nav/navbar.css">
+    <link rel="stylesheet" href="/style/search/search.css">
+    <link rel="stylesheet" href="/style/table/light-green.css">
+        <link rel="stylesheet" href="/style/Tag/tags.css"> <!--tags-->
+        <link rel="stylesheet" href="/style/filter/filter.css">
+        <link rel="stylesheet" href="/style/card/add.css">
+        <link rel="stylesheet" href="/style/card/View-perfil.css">    
+        <link rel="stylesheet" href="/style/card/view-config-chamada.css">
+        <link rel="stylesheet" href="/style/filter/filter.css">
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Lexend:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Perfil</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div>
+                <img src="/img/Logo M.png" alt="">
+            </div>
+            <ul>
+                <a href="index.html"></a><li >Chamadas</li>
+                <a href="/routes/Departamento/gestores/view-membros-gestor.html"><li>Departamento</li></a>
+                <a href="#"></a> <li  class="pagina-atual">Perfil</li>
+                <li>Ajuda</li>
+                <li>Logout</li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <header class="d-flex justify-content-between px-4">
+                    <div class=" pt-4">
+                        <button class="btn-back-page" onclick="history.back()"> 
+                           
+                                
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.7592 11.9294L10.6887 12L10.7592 12.0706L15.2687 16.5899L14 17.8586L8.14142 12L14 6.14142L15.2687 7.41008L10.7592 11.9294Z" fill="#C6CEDA" stroke="#FCFCFC" stroke-width="0.2"/>
+                                </svg> Voltar Página
+                            </button>
+                    </div>
+
+                    
+                    <div class="d-flex align-items-center">
+                        <h4>Perfil</h4>
+                    </div>
+                        
+                    
+                </header> 
+
+
+
+
+
+
+                <div class="row">
+                    <div class="col d-flex justify-content-center mt-5 mb-5">
+                        <div class="box-add-new-member mt-5">
+                            <div class="d-flex justify-content-center ">
+                                <div class="edit-profile profile">
+                                
+                                </div>
+                                <a href="#">edit</a>
+                            </div>
+                            
+                            <div class="d-flex justify-content-evenly">
+                                <div class="pt-2 profile-user">
+                                    <div class="d-flex ">
+                                        <p>Usuário</p>
+                                    </div>
+                                    <input type="text" placeholder="Nome">
+                                    <input type="text" placeholder="Sobrenome">
+                                </div>
+                                <div class="pt-2 box-select-item alt desabilitado" >
+                                    <div class="d-flex"><p>Selecione um setor</p></div>
+                                    
+                                    <select name="" id="" disabled>
+                                        <option value="">Financeiro Administrativo</option>
+                                        <option value="">Administrador</option>
+                                        <option value="">Corpo docente</option>
+                                    </select>
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="1" width="15" height="15" rx="3.5" stroke="#AEAEAE"/>
+                                        <path d="M5 7.5L8 10.5L11 7.5" stroke="#AEAEAE" stroke-linecap="round"/>
+                                        </svg>
+                                </div>
+    
+                                <div class="pt-2 box-select-item alt px-4 desabilitado"  disabled >
+                                    <div class="d-flex">
+                                        <p>Nível</p>
+                                    </div>
+    
+                                    <select name="" id="" disabled >
+                                        <option value="">Colaborador</option>
+                                        <option value="">Gestor</option>
+                                    </select>
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="1" width="15" height="15" rx="3.5" stroke="#AEAEAE"/>
+                                        <path d="M5 7.5L8 10.5L11 7.5" stroke="#AEAEAE" stroke-linecap="round"/>
+                                        </svg>
+                                </div>
+                                <div class="pt-2 box-select-item alt profile-genero ">
+                                    <div class="d-flex">
+                                        <p>Gênero</p>
+                                    </div>
+    
+                                    <select name="" id="">
+                                        <option value="">M</option>
+                                        <option value="">F</option>
+                                    </select>
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="1" width="15" height="15" rx="3.5" stroke="#AEAEAE"/>
+                                        <path d="M5 7.5L8 10.5L11 7.5" stroke="#AEAEAE" stroke-linecap="round"/>
+                                        </svg>
+                                </div>
+                                
+                            </div>
+    
+                            <div class="d-flex justify-content-around">
+                                <div class="pt-4 ps-4">
+                                    <div class="d-flex">
+                                        <p>Email</p></div>
+                                    <input type="text" placeholder="Digite um email">
+                                </div>
+                                <div class="pt-4 ps-2">
+                                    <div class="d-flex"> <p>Confirme o email</p></div>
+                                   
+                                    <input type="text" placeholder="Confirme o email">
+                                </div>
+                                <div class="pt-4 ps-4">
+                                    <div class="d-flex"><p>Digite a senha</p></div>
+                                    
+                                    <input type="text" placeholder="Senha com 6 Dígitos">
+                                </div>
+                                <div class="pt-4 ps-2">
+                                   <div class="d-flex"> <p>Confirme a senha</p></div>
+                                    <input type="text" placeholder="Senha com 6 Dígitos">
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center pt-5">
+                                <button class="btn-cta-members">
+                                    Salvar alteração
+                                </button>
+                            </div>                       
+                        </div>
+                    </div>
+                </div>
+
+
+                
+
+            </div>
+
+            <script src="/js/main.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+                integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+                integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

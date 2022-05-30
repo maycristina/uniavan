@@ -1,8 +1,51 @@
 .box-add-edit-departament{
     background-color: #ffffff;
-    width: 400px;
+    width: 700px;
+    padding: 40px 20px;
+    border-radius:16px;
     height: auto;
-    padding: 4% 20%;
-    color: red;
     border: 1px solid #a1a1a1;
+}
+.box-add-edit-departament p{
+    margin:1px 0 0 0;
+    color:#4d4d4d;;
+}
+
+.box-add-edit-departament input{
+    border: 1px solid #B7B9B9;
+    border-radius: 8px;
+    padding: 1%;
+    height: 40px;
+    outline: none !important;
+    padding: 0 8px;
+}
+
+.box-add-edit-departament input:focus{
+    border: 1px solid #9b9b9b;
+}
+
+.box-add-edit-departament .btn-select{
+    border-radius: 8px !important;
+    border: 1px solid #acacac;
+    height: 40px;
+}
+
+.box-add input{
+    width:280px;
+}
+
+.icon-number{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 56px;
+    height: 36px;
+    padding: 2px 4px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    color: #a1a1a1;
+}
+
+.icon-number span{
+    font-size:0.9rem;
 }
