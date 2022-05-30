@@ -1,0 +1,119 @@
+
+/* Menu */
+.nav{
+    display: flex;
+    flex-direction: column;
+    grid-column: 0/3;
+    width: 187px;
+    height: 100vh;
+    max-width: 256px!important;
+    min-width: 256px!important;
+    margin-left: -20px;
+    margin: -1 !important;
+    background-color:#FCFCFC;
+    color:#4F4F4F;
+}
+.nav a{
+    color:#4F4F4F;
+    text-decoration: none;
+}
+.nav a:hover{
+    color:#12741F;
+    font-weight: 400;
+}
+.nav ul {
+    list-style: none;
+    text-align: center;
+}
+.nav ul li{
+    padding: 24px 0;
+}
+
+/*Navbar imagem*/
+.nav div{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav img {
+    width: 64px;
+}
+
+/* Selecionar pagina atual*/
+.pagina-atual{
+    background-color:#D8F9DD;
+    color:#12741F;
+    font-weight: 400;
+}
+
+/**/
+
+
+
+/*menu-suspenso*/
+
+.menu{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    padding: 2% 4%;
+    font-size:1rem;
+}
+
+.suspenso{
+   padding: 0 2%; 
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   position: absolute;
+   
+}
+
+.suspenso ul{
+    background-color:#FBFBFB;
+    color:#DBDBDB;
+    font-weight: 300;
+    list-style:none;
+    display:flex;
+    justify-content: space-around;
+    width: 625px;
+    padding:16px 100px;
+    border-radius: 80px;
+}
+
+.suspenso ul li{
+    color:#DBDBDB ;
+    position: relative;
+    
+}
+
+.suspenso ul a{
+    text-decoration: none;
+}
+.box-menu{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin: -152px 0 0 0;
+    padding: 0 2%;
+}
+
+
+
+/*Selecionar aba atual*/
+.aba-atual{
+    background-color:#A0F1AB;
+    color:#0C5816;
+    border-radius:24px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 1% 6%;
+    margin-top: -4px;
+}
+
+
+.aba-atual li{
+    color:#0C5816 !important;
+}

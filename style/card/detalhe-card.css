@@ -1,0 +1,130 @@
+.profile-avatar{
+    width: 50px;
+    height:50px;
+    border-radius: 32px;
+    
+}
+
+.avatar{
+    width: 200px;
+}
+.avatar p {
+    font-size: 14px;
+    text-align: right;
+    width: 150px;
+    line-height:1rem;
+    color:#969292 !important;
+}
+.avatar p strong{
+    font-size: 16px;
+}
+
+.tg{
+    font-size:10px !important;
+}
+
+/**/
+
+.box-comment p{
+    padding: 20px 0 0 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.comment{
+    width: 100%;
+    height: 250px;
+    color:#AEAEAE;
+    border:1px solid rgba(174, 174, 174, 0.227);
+    border-radius: 8px;
+    outline: none !important;
+    font-size: 16px;
+    text-align: left;
+    padding: 50px 0 0 0;
+}
+
+/**/
+.btn-anexo{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#C4C4C4;
+    border-radius:4px;
+    padding: 4px 8px;
+    font-size:14px;
+    background-color: #ffff;
+    border: 1px solid #C4C4C4;
+    outline: none !important;
+    font-weight: 300;
+}
+
+.btn-send-msg{
+    background-color: #4EBFD9;
+    color:white;
+    border: none;
+    outline: none !important;
+    border-radius:16px;
+    width: 130px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4px 26px 4px 16px;
+    font-size:16px;
+    font-weight: 400;
+    display: flex;
+}
+
+.btn-send-msg svg{
+    width: 16px;
+}
+/**/
+
+.text-area{
+    width: 76%;
+    display: block;
+    position: absolute;
+    margin: -75px 0 0 0;
+    text-align: left;
+        font-family: 'Lexend';
+        
+}
+
+textarea:focus{
+    border:1px solid #00000044;
+    color: #000000;}
+
+/* Caixa de avatar */
+.l-comment p{
+    position: absolute;
+    font-size:14px;
+    color:#cccccc;
+    font-weight: 300;
+    font-family: 'Lexend';
+}
+
+.l-comment-r{
+    
+    font-family: 'Lexend';
+    position: absolute;
+    font-size:14px;
+}
+
+.l-comment-r p{
+    font-weight: 400 !important;
+    color: #415544 !important;
+}
+
+
+    
+/**/
+
+.envio{
+    background-color: #ffffff;
+}
+
+.primeiro { /* A pessoa que responde */
+    color:#4b4b4b;
+    background-color: #ebffec71;
+    border:1px solid rgba(65, 85, 68, 0.227);
+}
