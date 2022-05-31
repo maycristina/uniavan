@@ -47,6 +47,10 @@
     font-size: 1rem;
 }
 
+.card-login #logo{
+    width: 180px;
+}
+
 .eye-icon{
     display: block;
     position: absolute;

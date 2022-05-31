@@ -37,7 +37,10 @@
     align-items: center;
 }
 .nav img {
-    width: 64px;
+    width: auto;
+    padding:0 0 0 35px;
+  
+
 }
 
 /* Selecionar pagina atual*/
