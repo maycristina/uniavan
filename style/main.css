@@ -141,3 +141,8 @@ textarea{ /*Desativar o resize do textarea*/
     padding: 4px 0 0 0 !important;
     color: rgb(141, 141, 141) !important;
 }
+
+select:focus{
+    color:#1a1a1a !important;
+    
+}

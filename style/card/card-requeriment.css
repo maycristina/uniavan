@@ -1,0 +1,104 @@
+.card-requeriment{
+    width: 850px;
+    border-radius:16px;
+}
+
+
+
+.card-requeriment h4{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+.icon-help{
+    stroke: 1px solid #717171;
+    margin: -5px 0 0 2px;
+    
+}
+
+.card-requeriment input{
+    border: 1px solid #c0c0c0;
+    box-shadow: none !important;
+    width: 350px;
+}
+
+
+.card-requeriment input:focus{
+    border: 1px solid #c0c0c0;
+    
+}
+
+.card-requeriment .box-select-item select{
+    border:1px solid #c0c0c0 !important;
+    height: 40px;
+    width: 234px;
+    border-radius: 8px;
+    color: #DADADA;
+}
+
+
+.card-requeriment .box-select-item select:focus{
+    font-weight: 400 !important;
+}
+
+
+.icon-select-requeriment{
+    margin: 12px 0 0 -24px !important;
+   
+}
+
+.icon-select-requeriment svg{
+    width: 40px !important;
+}
+
+.number-requeriment select{
+    width: 150px !important;
+}
+
+.radio-select-requeriment{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    margin:4px 0 0 0;
+    color: #DADADA;
+}   
+
+
+.radio-select-requeriment input[radio]{
+    border:1px solid #DADADA;
+}
+
+.text-area-requeriment{
+    margin:-62px 0 0 0;
+    background-color: #ffffff !important;
+}
+
+.box-calendar{
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px;
+    margin: 12px 0 0 8px;
+    position: absolute;
+    color: #b1b1b1;
+}
+
+/**/
+
+.select-product input{
+    width:100%;
+}
+
+.btn-add button {
+    background-color:#E7F9FB;
+    color:#4EBFD9;
+    border:2px solid #4EBFD9;
+    width: 43px;
+    height: 40px;
+    border-radius:8px;
+    font-size: 24px;
+    margin:44px 0 0 0;
+
+}
+
+#box-product{
+    display: none;
+}

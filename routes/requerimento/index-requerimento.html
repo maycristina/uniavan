@@ -13,11 +13,17 @@
     <link rel="stylesheet" href="/style/search/search.css">
     <link rel="stylesheet" href="/style/table/light-green.css">
         <link rel="stylesheet" href="/style/Tag/tags.css"> <!--tags-->
+    <link rel="stylesheet" href="/style/card/card-requeriment.css">
+    <link rel="stylesheet" href="/style/card/detalhe-card.css">
+    <link rel="stylesheet" href="/style/card/view-config-chamada.css">
+    <link rel="stylesheet" href="/style/card/View-perfil.css">    
+    <link rel="stylesheet" href="/style/card/view-config-chamada.css">
+    <link rel="stylesheet" href="/style/filter/filter.css">
+
     <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Lexend:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -69,27 +75,221 @@
                         
                     </div>
                 </header> 
-                
+
                 <div class="row">
-                    <div class="menu">
+                    <div class="col  d-flex justify-content-center menu">
                         <div class="suspenso">
                             <ul>
-                                <a href="http://" class="aba-atual"><li>Enviados</li></a>
-                                <a href="/routes/index-recebidos.html"><li>Recebidos</li></a>
-                                <a href="/routes/index-historico.html"><li>Histórico</li></a>
+                                <a href="#" class="aba-atual"><li>Solitação</li></a>
+                                <a href="#"><li>Adicionar novo produto</li></a>
+                                
                             </ul>
                         </div>
                     </div>
+                </div>
 
-                    <div>
-                        <div class="box-menu">
-                            <button id="btn-cta-blue" onclick="NewRequisitionI()">Nova Solicitação <img src="/img/add_24px.png" alt=""></button>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <div class="card-requeriment">
+                            <h4>Nova solicitação</h4>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum nemo voluptas sapiente non ut enim nam architecto fugiat ea in. Doloremque excepturi error itaque, laudantium at magnam. Dolorem, laboriosam temporibus?
+                            </p>
+                            <br>
+                            <div class="row">
+                                <div class="d-flex pb-2">
+                                    <div class="box-select-item pe-5">
+                                        <div class="d-flex">
+                                            <p>Selecione o polo</p> <span><img class="icon-help" src="/img/alert-circle.svg" alt="" srcset=""></span> <span class="tag-red">*</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <select name="" id="">
+                                                <option value="">Balneário Camboriú</option>
+                                                <option value="">Blumenau</option>
+                                                <option value="">Brusque</option>
+                                            </select>
+                                            <svg class="icon-select-requeriment" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="1" width="15" height="15" rx="3.5" stroke="#AEAEAE"/>
+                                                <path d="M5 7.5L8 10.5L11 7.5" stroke="#AEAEAE" stroke-linecap="round"/>
+                                                </svg>
+                                        </div>
+                                    </div>
+                                    <div class="box-select-item pe-5">
+                                        <div class="d-flex">
+                                            <p>Departamento <span><img class="icon-help" src="/img/alert-circle.svg" alt="" srcset=""></span> <span class="tag-red">*</span></p> 
+                                        </div>
+                                        <div class="d-flex">
+                                            <select name="" id="">
+                                                <option value="">Balneário Camboriú</option>
+                                                <option value="">Blumenau</option>
+                                                <option value="">Brusque</option>
+                                            </select>
+                                            <svg class="icon-select-requeriment" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="1" width="15" height="15" rx="3.5" stroke="#AEAEAE"/>
+                                                <path d="M5 7.5L8 10.5L11 7.5" stroke="#AEAEAE" stroke-linecap="round"/>
+                                                </svg>
+                                        </div>
+                                    </div>
+                                    <div class="box-select-item pe-2">
+                                        <div class="d-flex">
+                                            <p>Colaborador<span><img class="icon-help" src="/img/alert-circle.svg" alt="" srcset=""></span> <span class="tag-red">*</span></p> 
+                                        </div>
+                                        <div class="d-flex">
+                                            <select name="" id="">
+                                                <option value="">Marcelo Pereira</option>
+                                                <option value="">Brian Larry</option>
+                                                <option value="">High</option>
+                                            </select>
+                                            <svg class="icon-select-requeriment" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="1" width="15" height="15" rx="3.5" stroke="#AEAEAE"/>
+                                                <path d="M5 7.5L8 10.5L11 7.5" stroke="#AEAEAE" stroke-linecap="round"/>
+                                                </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex pt-3 box-add">
+                                    <div class="box-select-item pe-5">
+                                        <div class="d-flex">
+                                            <p>Título</p> <span><img class="icon-help" src="/img/alert-circle.svg" alt="" srcset=""></span> <span class="tag-red">*</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <input type="text" placeholder="Digite o título da mensagem" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="box-select-item ps-2">
+                                        <div class="d-flex">
+                                            <p>Telefone/Ramal <span><img class="icon-help" src="/img/alert-circle.svg" alt="" srcset=""></span> <span class="tag-red">*</span></p> 
+                                        </div>
+                                        <div class="d-flex number-requeriment">
+                                            <select name="" id="">
+                                                <option value="">1234-4568</option>
+                                                <option value="">4567-7890</option>
+                                                <option value="">1234-4568</option>
+                                            </select>
+                                            <svg class="icon-select-requeriment" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="1" width="15" height="15" rx="3.5" stroke="#AEAEAE"/>
+                                                <path d="M5 7.5L8 10.5L11 7.5" stroke="#AEAEAE" stroke-linecap="round"/>
+                                                </svg>
+                                        </div>
+                                    </div>
+                                    <div class="box-select-item ps-5">
+                                        <div class="d-flex">
+                                            <p>Prioridade<span><img class="icon-help" src="/img/alert-circle.svg" alt="" srcset=""></span> <span class="tag-red">*</span></p> 
+                                        </div>
+                                        <div class="d-flex number-requeriment">
+                                            <select name="" id="">
+                                                <option value="" class="tag-low">Baixa</option>
+                                                <option value="" class="tag-medium">Média</option>
+                                                <option value="" class="tag-high">Alta</option>
+                                            </select>
+                                            <svg class="icon-select-requeriment" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="1" width="15" height="15" rx="3.5" stroke="#AEAEAE"/>
+                                                <path d="M5 7.5L8 10.5L11 7.5" stroke="#AEAEAE" stroke-linecap="round"/>
+                                                </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex pb-2">
+                                    <div class="d-flex box-select-item pt-4 align-content-center">
+                                        <div class="d-flex">
+                                            <p>Selecionar produto</p> <span><img class="icon-help" src="/img/alert-circle.svg" alt="" srcset=""></span> <span class="tag-red">*</span>
+                                        </div>
+                                        <div class="radio-select-requeriment ms-5">
+                                            <label for="">Sim</label>
+                                            <input type="radio" name="choice" id="yes">
+                                            <label for="" >Não</label>
+                                            <input type="radio" name="choice" id="no" >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="select-product" id="box-product">
+                                    <div>
+                                        <input type="text" placeholder="Digite o título da mensagem" class="form-control ">
+                                    </div>
+                                    
+                                    <div class="d-flex pt-3 justify-content-between ">
+                                        <div class="pe-2">
+                                            <p>Un. de medida</p>
+                                            <input type="text" placeholder="Digite o título da mensagem" class="form-control ">
+                                        </div>
+                                        <div class="pe-2">
+                                            <p>Quantidade</p>
+                                            <input type="text" placeholder="Digite o título da mensagem" class="form-control ">
+                                        </div>
+                                        <div class="pe-2">
+                                            <p>Custo em média</p>
+                                            <input type="text" placeholder="Digite o título da mensagem" class="form-control ">
+                                        </div>
+                                        <div class="pe-2">
+                                            <p>Referência</p>
+                                            <input type="text" placeholder="Digite o título da mensagem" class="form-control ">
+                                        </div>
+                                        <div class="btn-add">
+                                            <button>+</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="py-4">
+                                     <div class="box-calendar" >
+                                        <div > <p>Dia, data e horário atual</p></div>
+                                     </div>
+                                    
+                                    <textarea type="textarea" cols="30" rows="8" class="comment px-2" placeholder="Um texto de exemplo....">
+                                    </textarea>
+                                        <div class="d-flex justify-content-between align-items-center px-2 text-area-requeriment">
+                                           <div class="px-3 py-2 ">
+
+                                               <button class="btn-anexo"> 
+                                                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2_440)">
+                                                <path d="M7.00008 3.99999V11.6667C7.00008 13.14 5.80675 14.3333 4.33341 14.3333C2.86008 14.3333 1.66675 13.14 1.66675 11.6667V3.33332C1.66675 2.41332 2.41341 1.66666 3.33341 1.66666C4.25341 1.66666 5.00008 2.41332 5.00008 3.33332V10.3333C5.00008 10.7 4.70008 11 4.33341 11C3.96675 11 3.66675 10.7 3.66675 10.3333V3.99999H2.66675V10.3333C2.66675 11.2533 3.41341 12 4.33341 12C5.25341 12 6.00008 11.2533 6.00008 10.3333V3.33332C6.00008 1.85999 4.80675 0.666656 3.33341 0.666656C1.86008 0.666656 0.666748 1.85999 0.666748 3.33332V11.6667C0.666748 13.6933 2.30675 15.3333 4.33341 15.3333C6.36008 15.3333 8.00008 13.6933 8.00008 11.6667V3.99999H7.00008Z" fill="#C4C4C4"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_2_440">
+                                                <rect width="9" height="16" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                                </svg>
+                                                Ver Anexo</button>
+
+                                                
+                                            </div>
+                                            <div>
+                                                <button class="btn-send-msg pe-2"> Responder 
+                                                    <svg  width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_2_238)">
+                                                        <path d="M1.84266 2.75L21.0835 11L1.84266 19.25L1.8335 12.8333L15.5835 11L1.8335 9.16667L1.84266 2.75Z" fill="white"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_2_238">
+                                                        <rect width="21" height="21" fill="white"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                        </svg>
+                                                        
+                                                </button>
+                                            </div>
+                                    </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         
+        <script>
+            var x = document.querySelectorAll('.radio-select-requeriment')
+            var y = document.getElementById('box-product')
+            if(x === 'yes') {
+               y.style.display = 'block'
+            } else {
+                console.log(y.style.display = 'none')
+            }
+            
+        </script>
 
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
                 integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
