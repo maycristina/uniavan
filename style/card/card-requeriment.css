@@ -12,9 +12,27 @@
 
 .icon-help{
     stroke: 1px solid #717171;
-    margin: -5px 0 0 2px;
+    margin: -6px 0 0 2px;
     
 }
+
+/**/
+
+.i-arrow{
+    background-color: #ffffff;
+    position: absolute;
+    margin:-40px 0 0 234px;
+    pointer-events: none;
+}
+
+
+.i-arrow-number{
+    background-color: #ffffff;
+    position: absolute;
+    margin:-44px 0 0 152px;
+    pointer-events: none;
+}
+
 
 .card-requeriment input{
     border: 1px solid #c0c0c0;
@@ -95,10 +113,119 @@
     height: 40px;
     border-radius:8px;
     font-size: 24px;
-    margin:44px 0 0 0;
-
+    margin:28px 0 0 0;
+    padding: 0 0 6px 0 ;
 }
 
 #box-product{
     display: none;
+}
+
+
+
+
+/**/
+.select2-container--default .select2-selection--single  {
+    margin: -1px 0 0 0;
+    border: 1px solid #c0c0c0;
+    height: 40px !important;
+    border-radius:8px;
+    
+}
+
+.select2-selection__rendered{
+    height: 40px !important;
+    color: #c0c0c0 !important;
+    padding: 4px 0 0 0;
+    font-weight:400!important;
+    outline: none !important;
+    font-family: 'Inter';
+}
+
+input{
+    color:#c0c0c0 !important;
+    outline: none !important;
+}
+
+input[type=search]:focus{
+    outline: none !important;
+    color: #696969 !important;
+}
+
+input[type=search]::selection{
+    outline: none !important;
+}
+
+.i-search{
+    width: 22px !important;
+    background-color: #ffffff;
+    display: block;
+    position: absolute;
+    margin: -37px 0 0 208px;
+    pointer-events:none;
+}
+
+.dinheiro{
+    color: #696969;
+    font-weight: 300;
+    font-size: 0.998rem;
+    position: absolute;
+    background-color: #ffffff;
+    margin: 8px 0 0 4px;
+}
+
+.money{
+    
+    padding: 0 0 0 28px !important;
+    height: 37px;
+}
+
+/***/
+
+.card-add-new-product{
+    width: 700px !important;
+    border-radius:16px;
+    border: 1px solid #6F727A;
+    height: 400px;
+    padding:50px 20px 0px 20px;
+}
+
+
+.card-add-new-product input{
+    width: 100%;
+}
+
+.add-pt{
+    margin:10px 0 0 -120px !important;
+}
+
+/**/
+
+.btn-edit{
+    text-decoration: none;
+    padding: 4px 18px;
+    background-color: #D8F9DD;
+    color:#158424;
+    border-radius: 16px;
+}
+
+
+.btn-edit:hover{
+    color:#158424;
+}
+.btn-trash{
+    text-decoration: none;
+    padding: 4px 18px;
+    background-color: #F5AAAA;
+    color:#ffffff;
+    border-radius: 16px;
+}
+.btn-trash:hover{
+    
+    color:#ffffff;
+}
+
+
+.list-product{
+    cursor: pointer;
 }

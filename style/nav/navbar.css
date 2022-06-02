@@ -50,6 +50,17 @@
     font-weight: 400;
 }
 
+.logout:hover{
+    background-color:#F1A0A0 !important;
+    color:#5B0000 !important;
+    transition: 1s !important;
+}
+
+
+.logout li:active{
+    background-color:#F1A0A0 !important;
+}
+
 /**/
 
 

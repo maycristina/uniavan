@@ -33,12 +33,15 @@
                 <img src="/img/Logo M.png" alt="">
             </div>
             <ul>
-                <a href="/index.html"><li>Chamadas</li></a>
-                <li  class="pagina-atual">Departamento</li>
-                <li>Perfil</li>
-                <li>Ajuda</li>
-                <li>Logout</li>
-            </ul>
+                <a href="/index.html"> <li >Chamadas</li></a>
+                 <a href="/routes/Departamento/Adm/view-membros-adm.html"><li class="pagina-atual">Departamento</li></a>
+                 <a href="/routes/index-profile.html"><li>Perfil</li></a>
+                 <a href="/routes/index-ajuda.html"><li>Ajuda</li></a> 
+                 <a href="/routes/index-login.html" class="logout"><li>Logout</li></a>
+             </ul>
+             <div>
+                 <img src="/img/LOGO-rodape.png" alt="">
+             </div>
         </div>
 
         <div class="row">
@@ -80,7 +83,7 @@
 
                     <div>
                         <div class="box-menu">
-                            <button id="btn-cta-blue" onclick="">Nova Solicitação <img src="/img/add_24px.png" alt=""></button>
+                            <button id="btn-cta-blue" onclick="window.location.href='add/add.html'">Nova Solicitação <img src="/img/add_24px.png" alt=""></button>
                         </div>
                     </div>
                 </div>
@@ -98,7 +101,7 @@
                 </div>
 
 
-                <div class="row">
+                <div class="row pt-5">
                     <div class="col bg-table px-5">
                         <table class="table table-light-blue">
                             <thead>

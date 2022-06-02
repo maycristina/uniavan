@@ -27,7 +27,7 @@
 #btn-cta-blue{
     display: block;
     background-color: #4EBFD9;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     padding: 4px 16px;
     position: absolute;
     border-radius: 16px;
@@ -36,6 +36,16 @@
     font-weight:400;
     justify-content: space-around;
     font-size:1rem;
+    
+}
+
+#btn-cta-blue a{
+    text-decoration: none !important;
+    color:#FFFFFF;
+}
+
+#btn-cta-blue a:hover{
+    color:#FFFFFF;
 }
 
 #btn-cta-blue img {
@@ -144,5 +154,9 @@ textarea{ /*Desativar o resize do textarea*/
 
 select:focus{
     color:#1a1a1a !important;
+    
+}
+
+.logout{
     
 }

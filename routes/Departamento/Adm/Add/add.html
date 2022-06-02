@@ -14,9 +14,12 @@
     <link rel="stylesheet" href="/style/table/light-green.css">
     <link rel="stylesheet" href="/style/table/light-blue.css">
         <link rel="stylesheet" href="/style/Tag/tags.css"> <!--tags-->
-    <link rel="stylesheet" href="/style/card/add.css">
+   
     <link rel="stylesheet" href="/style/card/View-perfil.css">    
+    <link rel="stylesheet" href="/style/card/view-config-chamada.css">
     <link rel="stylesheet" href="/style/filter/filter.css">
+    <link rel="stylesheet" href="/style/card/Edit-departament.css">
+    
     <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,12 +39,15 @@
                 <img src="/img/Logo M.png" alt="">
             </div>
             <ul>
-                <li class="pagina-atual">Chamadas</li>
-                <li>Departamento</li>
-                <li>Perfil</li>
-                <li>Ajuda</li>
-                <li>Logout</li>
-            </ul>
+                <a href="/index.html"> <li >Chamadas</li></a>
+                 <a href="/routes/Departamento/Adm/view-membros-adm.html"><li class="pagina-atual">Departamento</li></a>
+                 <a href="/routes/index-profile.html"><li>Perfil</li></a>
+                 <a href="/routes/index-ajuda.html"><li>Ajuda</li></a> 
+                 <a href="/routes/index-login.html" class="logout"><li>Logout</li></a>
+             </ul>
+             <div>
+                 <img src="/img/LOGO-rodape.png" alt="">
+             </div>
         </div>
 
         <div class="row">
@@ -84,17 +90,19 @@
                     <div class="box-add-edit-departament">
                         <div>
                             <div class="pt-2">
-                                <h5>Adicionar Novo Departamento</h5>
+                                <label for="">Adicionar Novo Departamento
                                 <input type="text" placeholder="Financeiro">
+                            </label>
                             </div>
                             <div class="pt-4">
-                                <h5>Digite uma sigla para o Departamento</h5>
+                                <label for="">Digite uma sigla para o Departamento
                                 <input type="text" placeholder="No máximo 12 caracteres">
+                            </label>
                             </div>
                             
                         </div>
                         <div class="d-flex justify-content-end pt-4">
-                            <button class="btn-cta-light-green">
+                            <button class=" add-apart">
                                 Salvar alteração
                             </button>
                         </div>                       
