@@ -1,0 +1,56 @@
+
+
+.table-light-blue thead{
+    background-color: #E7F9FB;
+    color:#12646D;
+    height: 80px;
+    width: 500px;
+}
+
+
+.table-light-blue thead img{
+    width: 8px;
+    cursor: pointer;
+}
+
+
+.table-light-blue tbody tr th{
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:#6e6e6e;
+}
+
+
+.select-style{
+    background:url(/img/arrow-down-blue-.png) no-repeat center;
+    width: 16px;
+    overflow: hidden;
+}
+
+.select-style select{
+    background:transparent;
+    width: 16px;
+    height: 24px;
+    padding:8px;
+    border: none;
+    -webkit-appearance: none;
+    outline: none !important;
+}
+
+
+.select-style:active{
+    background:url(/img/180deg.png) no-repeat center;
+}
+
+.select-style::before{
+    background:url(/img/180deg.png) no-repeat center;
+}
+.select-style::after{
+    background:url(/img/180deg.png) no-repeat center;
+}
+
+.select-style:focus{
+    background:url(/img/180deg.png) no-repeat center;
+}
