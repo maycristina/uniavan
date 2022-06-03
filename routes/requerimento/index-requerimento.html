@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="/style/card/View-perfil.css">
     <link rel="stylesheet" href="/style/card/view-config-chamada.css">
     <link rel="stylesheet" href="/style/filter/filter.css">
+    <link rel="stylesheet" href="/style/table/table-list.css">
     <link rel="stylesheet" href="/js/jquery-ui.min.css">
     <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -317,7 +318,8 @@
                                             </label>
                                         </div>
                                         <div class="btn-add">
-                                            <button><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            <button onclick="listProduct()" class="chama">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M16 8H0" stroke="#4EBFD9" stroke-width="2" />
                                                     <path d="M8 -9.23872e-07L8 16" stroke="#4EBFD9" stroke-width="2" />
@@ -381,6 +383,66 @@
 
                                 </div>
                             </div>
+                            <div class="row pb-5">
+                                <div id="cardlist">
+                                    <h5>Lista de Produtos</h5>
+                                    <table class="table table-list">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">50</th>
+                                            <td>Resma De Papel A4 </td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla malesuada erat amet, dis.</td>
+                                            <td><span class="link-produt"><a href="http://" target="_blank" rel="noopener noreferrer">Referência</a></span></td>
+                                            <td class="px-2"><div class="del-item">
+                                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.5 6H5.5H21.5" stroke="#5B0B0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.5 6V4C8.5 3.46957 8.71071 2.96086 9.08579 2.58579C9.46086 2.21071 9.96957 2 10.5 2H14.5C15.0304 2 15.5391 2.21071 15.9142 2.58579C16.2893 2.96086 16.5 3.46957 16.5 4V6M19.5 6V20C19.5 20.5304 19.2893 21.0391 18.9142 21.4142C18.5391 21.7893 18.0304 22 17.5 22H7.5C6.96957 22 6.46086 21.7893 6.08579 21.4142C5.71071 21.0391 5.5 20.5304 5.5 20V6H19.5Z" stroke="#5B0B0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.5 11V17" stroke="#5B0B0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M14.5 11V17" stroke="#5B0B0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                </div></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">20</th>
+                                            <td>Lápis Borracha FABER-CASTELL</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla malesuada erat amet, dis.</td>
+                                            <td><span class="link-produt"><a href="http://" target="_blank" rel="noopener noreferrer">Referência</a></td>
+                                            <td class="px-2"><div class="del-item">
+                                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.5 6H5.5H21.5" stroke="#5B0B0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.5 6V4C8.5 3.46957 8.71071 2.96086 9.08579 2.58579C9.46086 2.21071 9.96957 2 10.5 2H14.5C15.0304 2 15.5391 2.21071 15.9142 2.58579C16.2893 2.96086 16.5 3.46957 16.5 4V6M19.5 6V20C19.5 20.5304 19.2893 21.0391 18.9142 21.4142C18.5391 21.7893 18.0304 22 17.5 22H7.5C6.96957 22 6.46086 21.7893 6.08579 21.4142C5.71071 21.0391 5.5 20.5304 5.5 20V6H19.5Z" stroke="#5B0B0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.5 11V17" stroke="#5B0B0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M14.5 11V17" stroke="#5B0B0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                </div></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">30</th>
+                                            <td>Lápis Borracha FABER-CASTELL</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla malesuada erat amet, dis.</td>
+                                            <td><span class="link-produt"><a href="http://" target="_blank" rel="noopener noreferrer">Referência</a> </td>
+                                            <td class="px-2"><div class="del-item">
+                                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.5 6H5.5H21.5" stroke="#5B0B0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.5 6V4C8.5 3.46957 8.71071 2.96086 9.08579 2.58579C9.46086 2.21071 9.96957 2 10.5 2H14.5C15.0304 2 15.5391 2.21071 15.9142 2.58579C16.2893 2.96086 16.5 3.46957 16.5 4V6M19.5 6V20C19.5 20.5304 19.2893 21.0391 18.9142 21.4142C18.5391 21.7893 18.0304 22 17.5 22H7.5C6.96957 22 6.46086 21.7893 6.08579 21.4142C5.71071 21.0391 5.5 20.5304 5.5 20V6H19.5Z" stroke="#5B0B0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.5 11V17" stroke="#5B0B0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M14.5 11V17" stroke="#5B0B0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                </div></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -399,6 +461,7 @@
             <script>
                 var x = document.querySelectorAll('.radio-select-requeriment')
                 var y = document.getElementById('box-product')
+                var box = document.getElementById('cardlist');
 
                 function atv(x) {
                     if (x === 0) {
@@ -407,6 +470,12 @@
                         y.style.display = 'block';
                     }
                 }
+
+                function listProduct () {
+                       console.log(box.style.display = 'block');
+                    }
+                
+
 
                 $('.js-data-example-ajax').select2({
                     /* ajax: {

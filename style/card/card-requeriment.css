@@ -210,7 +210,7 @@ input[type=search]::selection{
 
 /**/
 
-.btn-edit{
+.btn-edit-product{
     text-decoration: none;
     padding: 4px 18px;
     background-color: #D8F9DD;
@@ -219,8 +219,8 @@ input[type=search]::selection{
 }
 
 
-.btn-edit:hover{
-    color:#158424;
+.btn-edit-product:hover{
+    color:#179928 !important;
 }
 .btn-trash{
     text-decoration: none;
@@ -249,6 +249,7 @@ input[type=search]::selection{
     position: absolute;
     background-color: white;
     box-shadow: #00000048 8px 8px 8px;
+    color:#717171;
 }
 
 
