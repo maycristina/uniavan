@@ -160,3 +160,21 @@ select:focus{
 .logout{
     
 }
+
+.btn-send-msg a{
+    text-decoration: none;
+    color:#FFFFFF;
+}
+
+
+.btn-send-msg a:hover{
+    text-decoration: none;
+    color:#FFFFFF;
+}
+
+/**/
+
+.panel img{
+    width: auto;
+    height: 150px;
+}

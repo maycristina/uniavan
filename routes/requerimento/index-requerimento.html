@@ -264,9 +264,19 @@
                                 </div>
 
                                 <div class="select-product" id="box-product">
-                                    <div>
-                                        <input type="text" placeholder="Digite o título da mensagem"
-                                            class="form-control ">
+                                    <div class=" box-select-item d-flex flex-column">
+                                        <label for="id_label_single">
+                                            Digite o nome do produto
+                                            <br>
+                                        <select name="" id="" class="js-data-example-ajax js-states form-control" id="id_label_single" style="width:100%;">
+                                            <option value="álcool" data-select2-id="alcool" >Álcool</option>
+                                            <option value="água" data-select2-id="agua">Água</option>
+                                            <option value="açucar" data-select2-id="acucar">Áçucar</option>
+                                        </select>
+                                        <div class="i-search-title">
+                                            <img src="/img/search-icon.svg" alt="">
+                                        </div>
+                                    </label>
                                     </div>
 
                                     <div class="d-flex pt-3 justify-content-between ">
@@ -350,7 +360,7 @@
 
                                         </div>
                                         <div>
-                                            <button class="btn-send-msg pe-2"> Responder
+                                            <button class="btn-send-msg pe-2"> <a href="index-confirmar.html"> Confirmar
                                                 <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <g clip-path="url(#clip0_2_238)">
@@ -364,7 +374,7 @@
                                                         </clipPath>
                                                     </defs>
                                                 </svg>
-
+                                                </a>
                                             </button>
                                         </div>
                                     </div>

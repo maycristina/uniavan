@@ -23,7 +23,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <title>Departamento/Membros</title>
+    <title>Departamento/Setores</title>
 </head>
 
 <body>
@@ -33,8 +33,8 @@
                 <img src="/img/Logo M.png" alt="">
             </div>
             <ul>
-                <a href="/index.html"> <li class="pagina-atual">Chamadas</li></a>
-                 <a href="/routes/Departamento/colaboradores/view-membros-colaboradoress.html"><li>Departamento</li></a>
+                <a href="/index.html"> <li >Chamadas</li></a>
+                 <a href="/routes/Departamento/gestores/view-membros-gestor.html"><li class="pagina-atual">Departamento</li></a>
                  <a href="/routes/index-profile.html"><li>Perfil</li></a>
                  <a href="/routes/index-ajuda.html"><li>Ajuda</li></a> 
                  <a href="/routes/index-login.html" class="logout"><li>Logout</li></a>
@@ -46,11 +46,11 @@
 
         <div class="row">
             <div class="col">
-                <header class="d-flex justify-content-betweent">
-                    <div class="pt-4">
-                        <h3>Membros</h3>
-                        <p>Nessa aba é possível acompanhar os membros do seu departamento.
-                        </p>
+                <header class="d-flex justify-content-betweent pb-4">
+                    <div class="pt-4 pb-4" style="width:500px ;">
+                        <h3>Setores</h3 >
+                            <p class="subtitulo">Nessa aba é possível acompanhar <b>os departamentos</b> da Uniavan.
+                            </p>
                     </div>
 
                     
@@ -80,14 +80,14 @@
                         <div class="menu">
                             <div class="suspenso">
                                 <ul>
-                                    <a href="view-setores-colaboradoress.html" class="aba-atual"><li>Membros</li></a>
-                                    <a href="view-setores-colaboradores.html"><li>Setores</li></a>
+                                    <a href="view-membros-gestor.html"><li>Membros</li></a>
+                                    <a href="view-setores-gestor.html"  class="aba-atual"><li>Setores</li></a>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col d-flex align-items-center pt-2">
-                        <div class="input-search">
+                    <div class="col d-flex align-items-center mb-5">
+                        <div class="input-search mb-4">
                             <input type="text" class="form-control shadow-none" arial-label="exemple" placeholder="Buscar por nome, departamento"/>
                             <button>
                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="rgb(196, 196, 196)" xmlns="http://www.w3.org/2000/svg">
@@ -101,45 +101,92 @@
 
 
 
-                <div class="row">
+              
+                <div class="row pt-5 px-5">
                     <div class="col bg-table px-5">
                         <table class="table table-light-blue">
                             <thead>
                                 <tr>
-                                    <th scope="col">Nome<img src="/img/arrow-down-blue-.png" alt=""> 
+                                    <th scope="col"> 
+                                        <span>
+                                            Departamento  <span class="select-style">    
+                                         <select> 
+                                            <option value="'">Almoxarifado</option> 
+                                            <option value="'">Financeiro</option>    
+                                            <option value="'">X</option> 
+                                            <option value="'">Y</option>    
+                                            <option value="'">Z</option>     
+                                        </select></span></span>   
                                     </th>
-                                    <th scope="col">Departamento 
-                                        <img src="/img/arrow-down-blue-.png" alt="">                                           
+                                    <th scope="col"> 
+                                        <span>
+                                            Gestor <span class="select-style">    
+                                         <select> 
+                                            <option value="'">A</option> 
+                                            <option value="'">B</option>    
+                                            <option value="'">C</option> 
+                                            <option value="'">D</option>    
+                                            <option value="'">E</option>     
+                                        </select></span></span>                                                                     
                                     </th>
-                                    <th scope="col">Nível <img src="/img/arrow-down-blue-.png" alt=""> 
+                                    <th scope="col">
+                                        <span>
+                                            Membros  <span class="select-style">    
+                                         <select> 
+                                            <option value="'">3</option> 
+                                            <option value="'">4</option>    
+                                            <option value="'">5</option> 
+                                            <option value="'">6</option>    
+                                            <option value="'">7</option>     
+                                        </select></span></span>   
+                                        </th>
+                                        <th scope="col">
+                                            <span>
+                                                Local <span class="select-style">    
+                                             <select> 
+                                                <option value="'">Balneário Camboriu</option> 
+                                                <option value="'">Blumenau</option>    
+                                                <option value="'">Brusque</option> 
+                                                <option value="'">Florianópolis</option>    
+                                                <option value="'">Itajaí</option>
+                                                <option value="'">Itapema</option> 
+                                                <option value="'">Joinville</option>
+                                                <option value="'">Lages</option>
+                                                <option value="'">Rio do Sul</option>                
+                                            </select></span></span>   
                                         </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row"> Cláudio Luiz </th>
-                                    <td>TI</td>
-                                    <td>Gestor</td>
+                                    <th scope="row"> Almoxarifado </th>
+                                    <td>Cláudio Luiz</td>
+                                    <td>10</td>
+                                    <td>Balneário Camboriú</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Jonathan Silva</th>
-                                    <td>TI</td>
-                                    <td>Colaborador</td>                            
+                                    <th scope="row">Financeiro</th>
+                                    <td>Jonathan Silva</td>
+                                    <td>8</td>  
+                                    <td>Blumenau</td>                          
                                 </tr>
                                 <tr>
-                                    <th scope="row">Taynara Cristine</th>
-                                    <td>TI</td>
-                                    <td>Colaborador</td>
+                                    <th scope="row">Comercial</th>
+                                    <td>Taynara Cristine</td>
+                                    <td>7</td>
+                                    <td>Brusque</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Tomas Jose</th>
-                                    <td>TI</td>
-                                    <td>Colaborador</td>
+                                    <th scope="row">TI</th>
+                                    <td>Fernando</td>
+                                    <td>4</td>
+                                    <td>Itapema</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Kleber Felipe</th>
-                                    <td>TI</td>
-                                    <td>Colaborador</td>
+                                    <th scope="row">Editorial</th>
+                                    <td>Kleber Felipe</td>
+                                    <td>8</td>
+                                    <td>Florianópolis</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -148,7 +195,8 @@
 
 
             </div>
-
+        </div>
+</div>
             <script src="/js/main.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
                 integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

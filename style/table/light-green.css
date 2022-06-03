@@ -32,4 +32,53 @@
     overflow: hidden;
     text-overflow: ellipsis;
     color:#666666;
+    
+}
+
+tbody:hover tr:hover {
+    padding: 20px 0;
+    border-width: 2px;
+    color: #000000;
+    height: 40px;
+    transition: 1s;
+}
+
+tr:active {
+    border-width: 8px ;
+}
+    
+    
+
+
+
+.select-style-green{
+    background:url(/img/arrow-down-blue-.png) no-repeat center;
+    width: 16px;
+    overflow: hidden;
+}
+
+.select-style-green select{
+    background:transparent !important;
+    width: 16px;
+    height: 24px;
+    padding:8px;
+    border: none;
+    -webkit-appearance: none;
+    outline: none !important;
+}
+
+
+.select-style-green:active{
+    background:url(/img/180deg.png) no-repeat center;
+}
+
+.select-style-green::before{
+    background:url(/img/180deg.png) no-repeat center;
+}
+.select-style-green::after{
+    background:url(/img/180deg.png) no-repeat center;
+}
+
+.select-style-green:focus{
+    background:url(/img/180deg.png) no-repeat center;
 }

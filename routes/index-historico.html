@@ -36,15 +36,25 @@
                 <img src="/img/Logo M.png" alt="">
             </div>
             <ul>
-                <a href="/index.html"> <li class="pagina-atual">Chamadas</li></a>
-                 <a href="/routes/Departamento/gestores/view-membros-gestor.html"><li >Departamento</li></a>
-                 <a href="/routes/index-profile.html"><li>Perfil</li></a>
-                 <a href="/routes/index-ajuda.html"><li>Ajuda</li></a> 
-                 <a href="/routes/index-login.html" class="logout"><li>Logout</li></a>
-             </ul>
-             <div>
-                 <img src="/img/LOGO-rodape.png" alt="">
-             </div>
+                <a href="/index.html">
+                    <li class="pagina-atual">Chamadas</li>
+                </a>
+                <a href="/routes/Departamento/gestores/view-membros-gestor.html">
+                    <li>Departamento</li>
+                </a>
+                <a href="/routes/index-profile.html">
+                    <li>Perfil</li>
+                </a>
+                <a href="/routes/index-ajuda.html">
+                    <li>Ajuda</li>
+                </a>
+                <a href="/routes/index-login.html" class="logout">
+                    <li>Logout</li>
+                </a>
+            </ul>
+            <div>
+                <img src="/img/LOGO-rodape.png" alt="">
+            </div>
         </div>
 
         <div class="row">
@@ -100,7 +110,8 @@
 
                     <div>
                         <div class="box-menu">
-                            <button id="btn-cta-blue" onclick="NewRequisition()" >Nova Solicitação <img src="/img/add_24px.png" alt=""></button>
+                            <button id="btn-cta-blue" onclick="NewRequisition()">Nova Solicitação <img
+                                    src="/img/add_24px.png" alt=""></button>
                         </div>
                     </div>
                 </div>
@@ -136,11 +147,14 @@
                         </div>
                     </div>
                     <div class="col">
-                        <img src="/img/exemplo.png" alt="">
+                        <div>
+                            <div class="andamento"></div>
+                        <!-- <div class="negado"></div>
+                            <div class="resolvido"></div> -->
+                        </div>
+                        <!-- <img src="/img/exemplo.png" alt=""> -->
                     </div>
                 </div>
-
-
 
                 <div class="row py-5">
                     <div class="col d-flex px-5 filter-historico">
@@ -149,14 +163,17 @@
                         </div>
                         <div class="col">
                             <select name="" id="">
-                                <option value="">Finalizado</option>
-                                <option value="">Finalizado</option>
+                                <option value="" name="">Todos</option>
+                                <option value="" name="Resolvidos">Resolvidos</option>
+                                <option value="" name="Negados">Negados</option>
+                                <option value="" name="Andamento">Em andamento</option>
                             </select>
                         </div>
                         <div class="col">
                             <select name="" id="">
+                                <option value="" name="">Todos</option>
                                 <option value="">Enviados</option>
-                                <option value="">Enviados</option>
+                                <option value="">Recebidos</option>
                             </select>
                         </div>
                     </div>
@@ -179,13 +196,51 @@
                     <div class="col bg-table px-5">
                         <table class="table table-light-green">
                             <thead>
-                                <tr onclick="onHistoric()">
-                                    <th scope="col">Título <img src="/img/Arrow-down.png" alt=""> </th>
-                                    <th scope="col">Solicitante <img src="/img/Arrow-down.png" alt=""></th>
-                                    <th scope="col">Setor <img src="/img/Arrow-down.png" alt=""></th>
-                                    <th scope="col">Data <img src="/img/Arrow-down.png" alt=""></th>
-                                    <th scope="col">Status <img src="/img/Arrow-down.png" alt=""></th>
-                                    <th scope="col">Prioridade <img src="/img/Arrow-down.png" alt=""></th>
+                                <tr>
+                                    <th scope="col">Título 
+                                        
+                                         <span class="select-style-green"><select> 
+                                        <option value="'">A</option> 
+                                        <option value="'">B</option>    
+                                        <option value="'">C</option> 
+                                        <option value="'">D</option>    
+                                        <option value="'">E</option>     
+                                    </select></span>   </th>
+                                    <th scope="col">Solicitante <span class="select-style-green"> <select class="select-style-green"> 
+                                        <option value="'">A</option> 
+                                        <option value="'">B</option>    
+                                        <option value="'">C</option> 
+                                        <option value="'">D</option>    
+                                        <option value="'">E</option>     
+                                    </select></span>   </th>
+                                    <th scope="col">Setor <span class="select-style-green"> <select> 
+                                        <option value="'">A</option> 
+                                        <option value="'">B</option>    
+                                        <option value="'">C</option> 
+                                        <option value="'">D</option>    
+                                        <option value="'">E</option>     
+                                    </select></span>   </th>
+                                    <th scope="col">Data <span class="select-style-green"> <select> 
+                                        <option value="'">A</option> 
+                                        <option value="'">B</option>    
+                                        <option value="'">C</option> 
+                                        <option value="'">D</option>    
+                                        <option value="'">E</option>     
+                                    </select></span>   </th>
+                                    <th scope="col">Status <span class="select-style-green"> <select> 
+                                        <option value="'">A</option> 
+                                        <option value="'">B</option>    
+                                        <option value="'">C</option> 
+                                        <option value="'">D</option>    
+                                        <option value="'">E</option>     
+                                    </select></span>   </th>
+                                    <th scope="col">Prioridade <span class="select-style-green"> <select> 
+                                        <option value="'">A</option> 
+                                        <option value="'">B</option>    
+                                        <option value="'">C</option> 
+                                        <option value="'">D</option>    
+                                        <option value="'">E</option>     
+                                    </select></span>   </th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -194,7 +249,15 @@
                                     <td>Eduardo</td>
                                     <td>Financeiro Acadêmico</td>
                                     <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
+                                    <td>Em andamento</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="onHistoric()">
+                                    <th scope="row">Pedido de compra </th>
+                                    <td>Eduardo</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Negado</td>
                                     <td class="tag-low">Baixa</td>
                                 </tr>
                                 <tr onclick="onHistoric()">
@@ -202,15 +265,16 @@
                                     <td>Marina Silva</td>
                                     <td>Financeiro Acadêmico</td>
                                     <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
+                                    <td>Resolvido</td>
                                     <td class="tag-medium">Média</td>
                                 </tr>
+
                                 <tr onclick="onHistoric()">
                                     <th scope="row">Pedido de compra </th>
                                     <td>Sidney</td>
                                     <td>Financeiro Acadêmico</td>
                                     <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
+                                    <td>Negado</td>
                                     <td class="tag-high">Alta</td>
                                 </tr>
                             </tbody>
@@ -220,8 +284,8 @@
 
             </div>
             <div class="footer">
-                &nbsp;  Todos os direitos reservados ao Centro Universitário Avantis.
-        
+                &nbsp; Todos os direitos reservados ao Centro Universitário Avantis.
+
             </div>
             <script src="/js/main.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
@@ -230,6 +294,40 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
                 integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
                 crossorigin="anonymous"></script>
+
+            <style>
+                .andamento{
+                    width: 350px;
+                    height: 350px;
+                    border: 40px solid #FF9900;
+                    border-radius: 200px;
+                    transform: rotate(-9.06deg);
+                    z-index: 2000;
+                }
+
+                .negado {
+                    width: 350px;
+                    height: 350px;
+                    border: 40px solid #ca1111;
+                    
+                    border-radius: 200px;
+                    transform: rotate(45deg);
+                    position:absolute;
+                    margin: -350px 0 0 0;
+                }
+
+                .resolvido {
+                    width: 350px;
+                    height: 350px;
+                    border: 40px solid #0C5816;
+                    
+                    border-radius: 200px;
+                    transform: rotate(45deg);
+                    position:absolute;
+                    margin: -350px 0 0 0;
+                }
+
+            </style>
 </body>
 
 </html>

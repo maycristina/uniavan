@@ -95,6 +95,12 @@
       color: #727272;
       font-weight: 300;
   }
+  
+  .panel ul{
+      font-size:14px;
+      color:#666666;
+  }
+
 
   .svg-icon{
       display: flex;

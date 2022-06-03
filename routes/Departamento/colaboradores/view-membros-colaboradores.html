@@ -23,7 +23,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <title>Departamento/Setores</title>
+    <title>Departamento/Membros</title>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
             </div>
             <ul>
                 <a href="/index.html"> <li >Chamadas</li></a>
-                 <a href="/routes/Departamento/gestores/view-membros-gestor.html"><li class="pagina-atual">Departamento</li></a>
+                 <a href="/routes/Departamento/colaboradores/view-membros-colaboradoress.html"><li class="pagina-atual">Departamento</li></a>
                  <a href="/routes/index-profile.html"><li>Perfil</li></a>
                  <a href="/routes/index-ajuda.html"><li>Ajuda</li></a> 
                  <a href="/routes/index-login.html" class="logout"><li>Logout</li></a>
@@ -46,10 +46,10 @@
 
         <div class="row">
             <div class="col">
-                <header>
-                    <div class="pt-4">
-                        <h3>Setores</h3>
-                        <p>Nessa aba é possível acompanhar os setores da Uniavan.
+                <header class="d-flex justify-content-betweent">
+                    <div class="pt-4" style="width:500px ;">
+                        <h3>Membros</h3>
+                        <p class="subtitulo">Nessa aba é possível acompanhar os <b>colaboradores</b>  do seu departamento.
                         </p>
                     </div>
 
@@ -76,18 +76,18 @@
 
 
                 <div class="row">
-                    <div class="col d-flex align-items-center  pt-3">
+                    <div class="col d-flex align-items-center pt-3">
                         <div class="menu">
                             <div class="suspenso">
                                 <ul>
-                                    <a href="view-membros-gestor.html"><li>Membros</li></a>
-                                    <a href="view-setores-colaboradores.html"  class="aba-atual"><li>Setores</li></a>
+                                    <a href="view-setores-colaboradoress.html" class="aba-atual"><li>Membros</li></a>
+                                    <a href="view-setores-colaboradores.html"><li>Setores</li></a>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col d-flex align-items-center mb-5">
-                        <div class="input-search mb-4">
+                    <div class="col d-flex align-items-center pb-5">
+                        <div class="input-search pb-5">
                             <input type="text" class="form-control shadow-none" arial-label="exemple" placeholder="Buscar por nome, departamento"/>
                             <button>
                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="rgb(196, 196, 196)" xmlns="http://www.w3.org/2000/svg">
@@ -113,6 +113,8 @@
                                     </th>
                                     <th scope="col">Nível <img src="/img/arrow-down-blue-.png" alt=""> 
                                         </th>
+                                        <th scope="col">Polo <img src="/img/arrow-down-blue-.png" alt=""> 
+                                        </th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -120,26 +122,31 @@
                                     <th scope="row"> Cláudio Luiz </th>
                                     <td>TI</td>
                                     <td>Gestor</td>
+                                    <td>Balneário Camboriú</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Jonathan Silva</th>
                                     <td>TI</td>
-                                    <td>Colaborador</td>                            
+                                    <td>Colaborador</td>   
+                                    <td>Balneário Camboriú</td>                         
                                 </tr>
                                 <tr>
                                     <th scope="row">Taynara Cristine</th>
                                     <td>TI</td>
                                     <td>Colaborador</td>
+                                    <td>Balneário Camboriú</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Tomas Jose</th>
                                     <td>TI</td>
                                     <td>Colaborador</td>
+                                    <td>Blumenau</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Kleber Felipe</th>
                                     <td>TI</td>
                                     <td>Colaborador</td>
+                                    <td>Florianópolis</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -148,8 +155,7 @@
 
 
             </div>
-        </div>
-</div>
+
             <script src="/js/main.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
                 integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

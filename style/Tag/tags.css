@@ -45,7 +45,7 @@
 .status{
     /*
     height: 32px; */
-    width: 150px;
+    width: auto;
     padding: 4px 18px;
     border:1px solid #E6E9EF;
     border-radius: 8px;
@@ -77,4 +77,19 @@
     width:60vw;
     padding: 0 0 4px 0;
 
+}
+
+.tag-anexo{
+    position: absolute;
+    margin: -35px 0 0 110px;
+    padding: 8px 14px;
+    border-radius: 50px;
+    background-color:#E7F9FB;
+    color:#4EBFD9;
+    font-size:14px;
+}
+
+.tag-description-anexo{
+    color:#AEAEAE;
+    font-size:8px;
 }
