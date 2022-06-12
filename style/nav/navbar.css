@@ -131,3 +131,13 @@
 .aba-atual li{
     color:#0C5816 !important;
 }
+
+@media (min-width:200px) and (max-width:450px){
+    .nav{
+        display: none !important;
+    }
+
+    .header{
+        
+    }
+}
