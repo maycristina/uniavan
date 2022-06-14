@@ -54,3 +54,38 @@
     transition: 0.8s;
     padding: 2%;
 }
+
+@media(min-width:250px) and (max-width: 800px){
+    
+    .input-search{
+        padding: 0 50px !important;
+        /* background-color: red; */
+    }
+
+    .input-search input{
+        width:80vw !important;
+    }
+
+    .input-search button{
+        border: none;
+        background-color: #c4c4c400;
+        position: absolute;
+        justify-content: center;
+        margin:4px 0 0 250px !important;
+    }
+
+    .input-search button svg:hover{
+        width: 8px;
+        height:8px;
+        transition: 0.8s;
+        padding: 2%;
+        
+    }
+
+    .filter-order{
+       display: none !important;
+    }
+
+}
+
+

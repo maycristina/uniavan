@@ -74,9 +74,10 @@ var not = document.querySelector('.notification') /* Notificações */
     console.log(logo.style.visibility  = 'hidden');
   } 
 
-
   
   function ida () {
     var url = "Add/add-membro.html";
     window.location.href= url;
 }
+
+

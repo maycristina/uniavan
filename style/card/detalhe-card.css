@@ -44,6 +44,8 @@
     padding: 50px 0 0 0;
 }
 
+
+
 /**/
 .btn-anexo{
     width: 100px;
@@ -127,4 +129,97 @@ textarea:focus{
     color:#4b4b4b;
     background-color: #ebffec71;
     border:1px solid rgba(65, 85, 68, 0.227);
+}
+
+
+
+/**/
+@media (min-width:250px) and (max-width:800px){
+    
+    .box-comment{
+        width: 90vw !important;
+    }
+
+    .box-comment textarea{
+        font-size: 14px;
+    }
+
+    .l-comment p{
+        font-size:10px !important;
+    }
+    
+    .l-comment-r p{
+        font-size:10px !important;
+    }
+    .profile-avatar{
+        width:40px !important;
+        height: auto;
+    }
+    .avatar {
+        margin-right: -50px;
+    }
+    .avatar p{
+        font-size:10px !important;
+    }
+    .avatar strong{
+        font-size:12px !important;
+    }
+    
+    .btn-anexo{
+        margin: 10px 0 0 0;
+        width: 72px !important;
+        height: auto !important;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        color:#C4C4C4;
+        border-radius:4px;
+        padding: 2px 4px;
+        font-size:10px;
+        background-color: #ffff;
+        border: 1px solid #C4C4C4;
+        outline: none !important;
+        font-weight: 300;
+    }
+
+        
+    .btn-send-msg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #4EBFD9;
+        width: auto;
+        color:white;
+        border: none;
+        outline: none !important;
+        border-radius:16px;
+        padding: 4px 14px !important;
+        font-size:14px;
+        font-weight: 400;
+       
+    }
+    
+    .btn-send-msg svg{
+        display: none;
+    }
+
+    .send{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin: 0;
+    }
+    .tag-anexo{
+        width: auto;
+        height: auto;
+        font-size:12px;
+        position: absolute;
+        margin:-18px 0 0 76px;
+    }
+    .tag-description-anexo p{
+        width: 60vw !important;
+        font-size: 10px !important;
+        margin:-10px 0 0 0;
+    }
+
 }

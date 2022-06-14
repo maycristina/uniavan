@@ -27,6 +27,7 @@
 
 <body>
     <div class="container">
+        <span class="nav-sm" onclick="clickResponsive()"></span>
         <div class="nav">
             <div>
                 <img src="/img/Logo M.png" alt="">
@@ -43,7 +44,26 @@
              </div>
         </div>
 
+        <div class="nav-sm-active" id="menu-sm">  <!---Menu Smartphone-->
+            <span class="esc" onclick="esc()"></span>
+            <div>
+                <img src="/img/Logo M.png" alt="">
+            </div>
+            <ul>
+                <a href="/index.html"> <li class="pagina-atual">Chamadas</li></a>
+                 <a href="/routes/Departamento/Adm/view-membros-adm.html"><li>Departamento</li></a>
+                 <a href="/routes/index-profile.html"><li>Perfil</li></a>
+                 <a href="/routes/index-ajuda.html"><li>Ajuda</li></a> 
+                 <a href="/routes/index-login.html" class="logout"><li>Logout</li></a>
+             </ul>
+             <div>
+                 <img src="/img/LOGO-rodape.png" alt="">
+                 
+             </div>
+        </div>
+
         <div class="row">
+            
             <div class="col">
                 <header>
                     <div class=" pt-4">
@@ -110,10 +130,11 @@
 
                 <div class="row">
                     <div class="col bg-table px-5">
-                        <table class="table table-light-green">
+                        <table class="table table-light-green mb-5">
                             <thead>
-                                <tr >
-                                    <th scope="col">Título  <span class="select-style-green"> <select> 
+                                <tr>
+                                    <th class="show-title" scope="col">Título  
+                                        <span class="select-style-green"> <select> 
                                         <option value="'">A</option> 
                                         <option value="'">B</option>    
                                         <option value="'">C</option> 
@@ -159,7 +180,7 @@
                             </thead>
                             <tbody>
                                 <tr onclick="didItemSend()">
-                                    <th scope="row">Pedido de compra </th>
+                                    <th scope="row" class="title-table">Pedido de compra </th>
                                     <td>Luiz Inácio</td>
                                     <td>Financeiro Acadêmico</td>
                                     <td>27/11/20</td>
@@ -167,7 +188,7 @@
                                     <td class="tag-high">Alta</td>
                                 </tr>
                                 <tr onclick="didItemSend()">
-                                    <th scope="row">Pedido de compra </th>
+                                    <th scope="row" class="title-table">Pedido de compra </th>
                                     <td>Sidney</td>
                                     <td>Financeiro Acadêmico</td>
                                     <td>27/11/20</td>
@@ -175,7 +196,7 @@
                                     <td class="tag-high">Alta</td>
                                 </tr>
                                 <tr onclick="didItemSend()">
-                                    <th scope="row">Pedido de compra </th>
+                                    <th scope="row" class="title-table">Pedido de compra </th>
                                     <td>Marina Silva</td>
                                     <td>Financeiro Acadêmico</td>
                                     <td>27/11/20</td>
@@ -183,15 +204,15 @@
                                     <td class="tag-medium">Média</td>
                                 </tr>
                                 <tr onclick="didItemSend()">
-                                    <th scope="row">Pedido de compra </th>
+                                    <th scope="row" class="title-table">Pedido de compra </th>
                                     <td>Marina Silva</td>
                                     <td>Financeiro Acadêmico</td>
                                     <td>27/11/20</td>
                                     <td>Pendente/Usuário</td>
-                                    <td class="tag-medium">Média</td>
+                                    <td class=" tag-medium">Média</td>
                                 </tr>
                                 <tr onclick="didItemSend()">
-                                    <th scope="row">Pedido de compra </th>
+                                    <th scope="row" class="title-table">Pedido de compra </th>
                                     <td>Eduardo</td>
                                     <td>Financeiro Acadêmico</td>
                                     <td>27/11/20</td>
@@ -199,20 +220,121 @@
                                     <td class="tag-low">Baixa</td>
                                 </tr>
                                 <tr onclick="didItemSend()">
-                                    <th scope="row">Pedido de compra </th>
+                                    <th scope="row" class="title-table">Pedido de compra </th>
                                     <td>Jameson</td>
                                     <td>Financeiro Acadêmico</td>
                                     <td>27/11/20</td>
                                     <td>Pendente/Usuário</td>
                                     <td class="tag-low">Baixa</td>
                                 </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr><tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+
                             </tbody>
                         </table>
                     </div>
                 </div>
-
+               
+                <div class="footer">
+                    &nbsp; Todos os direitos reservados ao Centro Universitário Avantis.
+    
+                </div>
+                <div class="smartphone-action">
+                    <button id="bta-cta-sm" onclick="NewRequisitionI()">Nova Solicitação <img src="/img/add_24px.png" alt=""></button>
+                </div>
+            </div>
+                              
             </div>
 
+           
+           
+            
+            <script src="/js/nav.js"></script>
             <script src="/js/main.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
                 integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
@@ -222,4 +344,4 @@
                 crossorigin="anonymous"></script>
 </body>
 
-</html>
+</html> 

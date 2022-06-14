@@ -132,7 +132,20 @@
     color:#0C5816 !important;
 }
 
-@media (min-width:200px) and (max-width:450px){
+#menu-sm{
+    display:none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(247, 247, 247, 0.973);
+    position: absolute;
+    z-index: 2000;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@media (min-width:200px) and (max-width:800px){
     .nav{
         display: none !important;
     }
@@ -140,4 +153,74 @@
     .header{
         
     }
+
+    .nav-sm{
+        margin: 16px 8px 0 8px;
+        border-radius: 32px;
+        position: absolute;
+        padding:14px;
+        background: url(/img/linhas-menu.svg) no-repeat center;
+        background-size: 18px;
+    }
+
+    /* Menu */
+        .nav-sm-active{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            height: 100vh;
+           /*  max-width: 256px!important;
+            min-width: 256px!important; */
+            
+            
+            background-color:#FCFCFC;
+            color:#4F4F4F;
+        }
+        .nav-sm-active a{
+            color:#4F4F4F;
+            text-decoration: none;
+        }
+        .nav-sm-active a:hover{
+            color:#12741F;
+            font-weight: 400;
+        }
+        .nav-sm-active ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+        }
+        .nav-sm-active ul li{
+            padding: 24px 0;
+        }
+
+        /*Navbar imagem*/
+        .nav-sm-active div{
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-sm-active img {
+            width: auto;
+            padding:0 0 0 35px;
+        
+
+        }
+
+        .esc{
+            display: block;
+            padding: 12px;
+            border:1px solid #5B0000;
+            border-radius: 32px;
+            margin-top:16px;
+            margin-left: 8px;
+            background: url(/img/esc.svg) no-repeat center;
+            background-size: 12px;
+            position: absolute;
+            transition-timing-function: linear;
+            transition: 1s;
+        }
 }

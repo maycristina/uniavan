@@ -55,6 +55,8 @@
     background-color: #FFFFFF;
 }
 
+
+
 .history-status{
     font-size:12px;
 }
@@ -92,4 +94,61 @@
 .tag-description-anexo{
     color:#AEAEAE;
     font-size:8px;
+}
+
+@media(min-width:250px) and (max-width:800px){
+    .status{
+        margin:0 0 0 60px;
+        padding: 2px 8px;
+        font-size: 10px;
+    }
+    
+    .tag-orange{
+    width: 6px;
+    height: 6px;
+    }
+    
+    .EditRequeriment{
+        right:-10px;
+         margin: 28px 0 0 50px;
+        width: 450px;
+        display: flex;
+    }
+
+    .EditRequeriment svg{
+        width: 4px;
+    }
+
+    .history-status{
+        font-size:10px !important;
+    }
+
+
+        
+    .history-body{
+        font-family: 'Lexend';
+        color:#AEAEAE;
+        font-size: 10px;
+        font-weight: 300;
+        width:90vw !important;
+        padding: 0 4px;
+
+    }
+
+    .tag-anexo{
+        position: absolute;
+        margin:0;
+        padding: 8px 14px;
+        border-radius: 50px;
+        background-color:#E7F9FB;
+        color:#4EBFD9;
+        font-size:14px;
+    }
+
+    
+    .tag-description-anexo{
+        margin: 10px 0 0 0;
+        color:#AEAEAE;
+        font-size:8px;
+    }
 }

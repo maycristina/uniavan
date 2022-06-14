@@ -66,6 +66,16 @@
     
 }
 
+@media(min-width:250px) and (max-width:800px){
+    
+.btn-back-page{
+    width: 100px;
+    padding: 0 8px 0 0 !important;
+   /*  padding: 2px 16px 2px 8px; */
+    font-size:10px;
+}
+}
+
 .btn-login{
     width: 343px;
     height: 40px;
@@ -96,6 +106,60 @@
     width: 18px;
     padding: 1px;
     margin: -4px 0 0 0;
+}
+
+
+/**/
+.smartphone-action{
+    visibility: hidden;
+}
+@media(width:801px){
+#btn-cta-sm{
+    visibility: hidden;   
+}
+
+}
+
+@media(min-width:250px) and (max-width:800px){
+    .smartphone-action{
+        display: flex;
+        justify-content:center;
+        align-items: end;
+        bottom: 0 !important;
+        width: 100% !important;;
+        height: 80px;
+        position:fixed;
+    }
+
+    #bta-cta-sm{
+        display: block !important;
+        visibility: visible !important;
+        height:56px;
+        width: 100% !important;
+        background-color: #4ec0d9ea !important;
+        color: #FFFFFF !important;
+        /* padding: 4px 16px; */
+        border: none;
+        font-size:1.1rem;
+        font-weight:400;
+        justify-content: center;
+        font-size:1rem;
+        bottom: 0;
+        position: fixed;
+    }
+    
+    #bta-cta-sm a{
+        text-decoration: none !important;
+        color:#FFFFFF;
+    }
+
+    #bta-cta-sm a:hover{
+        color:#FFFFFF;
+    }
+
+    #bta-cta-sm img {
+        width: 8px !important; 
+    }
 }
 
 
@@ -138,6 +202,20 @@ textarea{ /*Desativar o resize do textarea*/
     height: 20vh;
     padding: 20px 0 0 0;
 }
+
+@media(min-width:250px) and (max-width:800px){
+    .footer{
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .EditRequeriment{
+        width: 80% !important;
+    }
+}
+
 
 /**/
 
