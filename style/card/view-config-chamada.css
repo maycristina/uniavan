@@ -1,7 +1,7 @@
 
 .background-pedido{
     background: linear-gradient(rgba(0, 0, 0, 0.062), rgba(0, 0, 0, 0));
-    width:86.4vw;
+    width:80vw;
     height: 100vh !important;
     position: absolute;
     z-index:1999;
@@ -25,10 +25,21 @@
     box-shadow: rgba(0, 0, 0, 0.219) 2px 4px 5px;
 }
 
+.box-select-item{
+    margin:0 4px;
+}
+
+
+.box-call h4{
+    padding: 32px 0 16px 0;
+}
+
+
 .box-select-item select{
     width: auto;
     height: 24px;
     border: none;
+    margin:0 4px;
     background: transparent !important;
     appearance: none;
     -webkit-appearance:none;
@@ -48,8 +59,8 @@
 
 .box-select-item .tag-red{
     color:red;
-    
 }
+
 .box-select-item p{
     margin:4px 0 0 0;
 }
@@ -91,4 +102,98 @@
 
 .cta-salvar{
     margin:-40px 0 0 0;
+}
+
+@media(min-width:250px) and (max-width:800px){
+    .background-pedido{
+        width: 100%;
+    }
+
+    .box-call{
+        width: 90vw;
+        height: 80vh;
+    }
+
+    .box-call h4{
+        padding: 16px 0 6px 0;
+    }
+
+    .box-select-item{
+        padding: 0;
+        margin:0;
+    }
+
+    .box-select-item p{
+        font-size: 0.8rem;
+        
+    }
+
+    .box-select-item select{
+        width: auto;
+        
+    }
+
+    .tag-red{
+        margin: 2px 0 0 2px !important;
+        opacity: 60%;
+    }
+
+    .sm-call{
+        display: flex;
+        flex-direction: column;
+        justify-content: left !important;
+        width: 80vw;
+    }
+
+    .history-status p{
+        font-size:10px !important;
+    }
+
+    .icon-avatar{
+        bottom: 0;
+    }
+
+    .textarea-conf{
+        height: 50vh;
+    }
+
+    .icon-avatar img{
+        width: 32px !important;
+        height: auto;
+    }
+
+    .icon-avatar strong{
+        font-size: 12px !important;
+    }
+
+    .icon-avatar p{
+        font-size: 10px !important;
+        line-height: 0.9rem;
+    }
+
+    .box-profile{
+        background-color: white !important;
+        margin:0;
+        padding: 0 0 32px 0;
+    }
+
+    .btn-cta-light-green{
+        margin: 0 !important; 
+        position:inherit !important;
+    }
+
+    .cta-salvar{
+        margin:0 !important;
+        padding: 0 !important;
+        font-size: 14px;
+        padding: 4px 10px !important;
+    }
+
+    .add-search-member svg{
+        margin: 0 0 0 -40px; 
+        background-color: rgba(255, 255, 255, 0.87);
+        border-radius:8px;
+
+    }
+ 
 }

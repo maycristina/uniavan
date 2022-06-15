@@ -12,6 +12,7 @@
 .profile{
     display: block;
 }
+
 .profile img{
     border: 1px solid #ffffff;
     border-radius: 100%;
@@ -149,5 +150,7 @@ header{
         display: flex;
         flex-direction: row;
         width: 100%;
+        background-color: #ffffff;
+        margin: 14px 0 0 0px !important;
     }
 }

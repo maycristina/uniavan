@@ -160,6 +160,10 @@
     #bta-cta-sm img {
         width: 8px !important; 
     }
+
+    .ocultar{
+        display: none;
+    }
 }
 
 
@@ -214,6 +218,12 @@ textarea{ /*Desativar o resize do textarea*/
     .EditRequeriment{
         width: 80% !important;
     }
+
+    .btn-cta-members{
+        padding: 8px 16px;
+        margin:16px 0 32px 0;
+    }
+
 }
 
 
