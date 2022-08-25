@@ -1,0 +1,240 @@
+
+.page-card{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(43, 37, 37, 8%);
+z-index: 2000;
+}
+
+
+.card-profile{
+    
+}
+
+.card-details-profile{
+    background-color: #ffffff;
+    border-radius: 16px;
+    width: 800px;
+    height: 200px;
+    padding: 1% 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.title-card{
+    width: 100%;
+    height: 24px;
+    padding: 32px 0;
+}
+
+.title-card h4{
+    margin: 2px 0 0 0;
+}
+
+.title-card p{
+    font-size: 14px;
+    font-weight: 300;
+    margin:-1px 0 0 0;
+}
+
+
+/**/
+
+.btn-exit{
+    border:2px solid #717171;
+    background-color: #ffffff;
+    border-radius: 24px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: -2px 0 0 -1px;
+    z-index: 2;
+}
+
+.border-exit{
+    border:5px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 24px;
+    width: 32px;
+    height: 32px;
+    margin: -32px 0 0 35px;
+    position: absolute;
+    z-index:1;
+}
+
+.icon-green{
+    width: 6px;
+    height: 6px;
+    background-color: #47A545;
+    border-radius:8px;
+    position: absolute;
+    margin: 5px 0 0 -10px ;
+    
+}
+.status-atv{
+    font-size:12px;
+    color:#47A545;
+    padding: 15px 0 0 0;
+}
+
+/**/
+.btn-edit-profile{
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    font-family:'Lexend';
+    font-weight: 200 !important;
+    color:#C4C4C4;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #C4C4C4;
+    position: absolute;
+    margin: 50px 0 0 -90px ;
+
+}
+
+
+.btn-select, .btn-select-cargo, .btn-select-status{
+    
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #C4C4C4;
+    outline: none !important;
+}
+
+.btn-select select{
+    width: 220px;
+    outline: none !important;
+    background: transparent !important;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    overflow: hidden;
+    cursor: pointer;
+    color:#C4C4C4 !important;
+}
+
+.btn-select svg{
+    position: absolute;
+    margin:4px 0 0 -20px;
+    background:transparent;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.btn-select-cargo select{
+    width: 120px;
+    outline: none !important;
+    background: transparent !important;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    overflow: hidden;
+    cursor: pointer;
+    color:#AEAEAE !important;
+}
+
+
+.btn-select-cargo  svg{
+    position: absolute;
+    margin:4px 0 0 -20px;
+    background:transparent;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+
+
+.btn-select-status svg{
+    position: absolute;
+    margin:4px 0 0 -20px;
+    background:transparent;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+
+
+.btn-select-status select{
+    width:70px;
+    outline: none !important;
+    background: transparent !important;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    overflow: hidden;
+    cursor: pointer;
+    color:#C4C4C4 !important;
+}
+
+
+
+/**/
+
+#atv {
+    color:#47A545;
+}
+
+
+#inatv {
+    color:#383838;
+}
+
+.btn-cta-light-green {
+    width: 150px;
+    padding: 4px 14px;
+    margin:80px 0 0 -140px;
+    position: absolute;
+    border: none;
+    background-color: #D8F9DD;
+    color: #025B00;
+    border-radius:8px;
+}
+
+/**/
+.card-details-profile-config{
+    background-color: #ffffff;
+    border-radius: 16px;
+    width: 800px;
+    height: 250px;
+    padding: 1% 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desabilitado{
+    color:#d4d4d4;
+}
+
+
+.desabilitado select{
+    /* width: 120px !important; */
+    color:#e7e7e7 !important;
+    border: 1px solid #e7e7e7 !important;
+}
+
+
+.desabilitado svg{
+    stroke:#e7e7e7 !important;
+    opacity: 60% !important;
+}
+
+.profile-user input{
+    width: 150px;
+}
+
+
+.profile-genero select{
+    width: 60px !important
+}

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logo-favicon.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/style/main.css">
+    <link rel="stylesheet" href="/style/nav/header.css">
+    <link rel="stylesheet" href="/style/nav/navbar.css">
+    <link rel="stylesheet" href="/style/search/search.css">
+    <link rel="stylesheet" href="/style/table/light-green.css">
+    <link rel="stylesheet" href="/style/Tag/tags.css">
+    <!--tags-->
+    <link rel="stylesheet" href="/style/card/detalhe-card.css">
+
+    <link rel="stylesheet" href="/style/card/view-config-chamada.css">
+    <link rel="stylesheet" href="/style/card/View-perfil.css">
+    <link rel="stylesheet" href="/style/filter/filter.css">
+    <link rel="stylesheet" href="/js/jquery-ui.min.css">
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Lexend:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
+    <title>Detalhes</title>
+</head>
+
+<body>
+    <div class="container">
+        <span class="nav-sm" onclick="clickResponsive()"></span>
+        <div class="nav">
+            <div>
+                <img src="/img/Logo M.png" alt="">
+            </div>
+            <ul>
+                <li class="pagina-atual">Chamadas</li>
+                <li>Departamento</li>
+                <li>Perfil</li>
+                <li>Ajuda</li>
+                <li>Logout</li>
+            </ul>
+        </div>
+
+        <div class="nav-sm-active" id="menu-sm">
+            <!---Menu Smartphone-->
+            <span class="esc" onclick="esc()"></span>
+            <div>
+                <img src="/img/Logo M.png" alt="">
+            </div>
+            <ul>
+                <a href="/index.html">
+                    <li>Chamadas</li>
+                </a>
+                <a href="/routes/Departamento/Adm/view-membros-adm.html">
+                    <li>Departamento</li>
+                </a>
+                <a href="/routes/index-profile.html">
+                    <li>Perfil</li>
+                </a>
+                <a href="/routes/index-ajuda.html">
+                    <li>Ajuda</li>
+                </a>
+                <a href="/routes/index-login.html" class="logout">
+                    <li>Logout</li>
+                </a>
+            </ul>
+            <div>
+                <img src="/img/LOGO-rodape.png" alt="">
+
+            </div>
+        </div>
+
+        <div class="row sm-call">
+            <div class="col">
+
+
+                <!--- HTML do pedido ----->
+                <div class="background-pedido">
+                    <div class="box-call  d-flex">
+                        <h4 class="py-5">Pedido de compra</h4>
+
+                        <div class="d-flex justify-content-around pb-2 sm-call">
+                            <div class="d-flex box-select-item">
+                                <p><b>Polo:</b></p>
+                                <select name="" id="" class="pt-1 ">
+                                    <option value="">Vinicius Whasgtom</option>
+                                    <option value="">E outro</option>
+                                    <option value="">Vinicius Whasgtom</option>
+                                </select>
+                                <svg class="mt-2" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="1" width="15" height="15" rx="3.5" stroke="#AEAEAE" />
+                                    <path d="M5 7.5L8 10.5L11 7.5" stroke="#AEAEAE" stroke-linecap="round" />
+                                </svg>
+                                <p class="tag-red">*</p>
+                            </div>
+                            <div class="d-flex  box-select-item "> <!-- ps-4 ms-4 -->
+                                <p><b>Departamento:</b></p>
+                                <select name="" id="" class="pt-1 " id="id_label_single">
+                                    <option value="Tecnologia" data-select2-id="Tecnologia">Tecnologia (TI)</option>
+                                    <option value="Tecnologia2" data-select2-id="Tecnologia2">Tecnologia2 (TI)</option>
+                                    <option value="Tecnologia3" data-select2-id="Tecnologia3">Tecnologia 3(TI)</option>
+                                    <option value="Tecnologia4" data-select2-id="Tecnologia4">Tecnologia 3(TI)</option>
+                                </select>
+                                <svg class="mt-2" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="1" width="15" height="15" rx="3.5" stroke="#AEAEAE" />
+                                    <path d="M5 7.5L8 10.5L11 7.5" stroke="#AEAEAE" stroke-linecap="round" />
+                                </svg>
+                                <p class="tag-red">*</p>
+                            </div>
+
+                            <div class="d-flex box-select-item "> <!-- ps-4 -->
+                                <p><b>Colaborador:</b></p>
+                                <select name="" id="" class="pt-1">
+                                    <option value="">Vinicius Whasgtom</option>
+                                    <option value="">E outro</option>
+                                    <option value="">Vinicius Whasgtom</option>
+                                </select>
+                                <svg class="mt-2" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="1" width="15" height="15" rx="3.5" stroke="#AEAEAE" />
+                                    <path d="M5 7.5L8 10.5L11 7.5" stroke="#AEAEAE" stroke-linecap="round" />
+                                </svg>
+                                <p class="tag-red">*</p>
+                            </div>
+
+
+                            <div class="d-flex  box-select-item "> <!-- ps-4 ms-4 -->
+                                <p><b>Prioridade:</b></p>
+                                <select name="" id="" class="pt-1">
+                                    <option value="">Alta</option>
+                                    <option value="">Média</option>
+                                    <option value="">Baixa</option>
+                                </select>
+                                <svg class="mt-2" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="1" width="15" height="15" rx="3.5" stroke="#AEAEAE" />
+                                    <path d="M5 7.5L8 10.5L11 7.5" stroke="#AEAEAE" stroke-linecap="round" />
+                                </svg>
+                                <p class="tag-red">*</p>
+                            </div>
+
+                            <div class="d-flex box-select-item "> <!-- ps-4 -->
+                                <p><b>Status:</b></p>
+                                <select name="" id="" class="pt-1">
+                                    <option value="">Pendente/Usuário</option>
+                                    <option value="">Pendente/Você</option>
+                                    <option value="">Resolvido</option>
+                                    <option value="">Negado</option>
+                                </select>
+                                <svg class="mt-2" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="1" width="15" height="15" rx="3.5" stroke="#AEAEAE" />
+                                    <path d="M5 7.5L8 10.5L11 7.5" stroke="#AEAEAE" stroke-linecap="round" />
+                                </svg>
+                                <p class="tag-red">*</p>
+                            </div>
+                        </div>
+
+                        <textarea class="textarea-conf pt-2" name="" id="" cols="30" rows="8"
+                            placeholder="O que é mais importante é o acesso ao financeiro. Precisamos ter certeza que mesmo depois de cancelado, finalizado o aluno ainda vai ter acesso a seu financeiro para imprimir boletos ou renegociar. Pode verificar isso pra mim?Fico no aguardo para testes. O que é mais importante é o acesso ao financeiro. Precisamos ter certeza que mesmo depois de cancelado, finalizado o aluno ainda vai ter acesso a seu financeiro para imprimir boletos ou renegociar. Pode verificar isso pra mim? Fico no aguardo para testes.">
+    </textarea>
+                        <div class="d-flex align-items-center justify-content-between box-info ">
+                            <div class="ps-2 pb-2">
+                                <button class="btn-anexo">
+                                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2_440)">
+                                            <path
+                                                d="M7.00008 3.99999V11.6667C7.00008 13.14 5.80675 14.3333 4.33341 14.3333C2.86008 14.3333 1.66675 13.14 1.66675 11.6667V3.33332C1.66675 2.41332 2.41341 1.66666 3.33341 1.66666C4.25341 1.66666 5.00008 2.41332 5.00008 3.33332V10.3333C5.00008 10.7 4.70008 11 4.33341 11C3.96675 11 3.66675 10.7 3.66675 10.3333V3.99999H2.66675V10.3333C2.66675 11.2533 3.41341 12 4.33341 12C5.25341 12 6.00008 11.2533 6.00008 10.3333V3.33332C6.00008 1.85999 4.80675 0.666656 3.33341 0.666656C1.86008 0.666656 0.666748 1.85999 0.666748 3.33332V11.6667C0.666748 13.6933 2.30675 15.3333 4.33341 15.3333C6.36008 15.3333 8.00008 13.6933 8.00008 11.6667V3.99999H7.00008Z"
+                                                fill="#C4C4C4" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2_440">
+                                                <rect width="9" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    Ver Anexo</button>
+                            </div>
+                            <div class="history-status pt-3 pe-2">
+                                <p> Ter, 17 de Maio</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center box-profile pt-4">
+                            <div class="d-flex justify-content-left align-items-center icon-avatar">
+                                <img class="profile-avatar" src="/img/profile.png" alt="">
+                                <p> <strong>Vinicius Alfredo</strong><br>financeiro</p>
+                            </div>
+                            <div class="d-flex align-items-center cta-salvar">
+                                <button class="btn-cta-light-green py-2" onclick="salvarRequeriment()"> Salvar
+                                    alteração</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--- HTML do pedido ----->
+
+
+                <header class="d-flex justify-content-between px-4 articles">
+                    <div class=" pt-4">
+                        <button class="btn-back-page" onclick="history.back()">
+
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.7592 11.9294L10.6887 12L10.7592 12.0706L15.2687 16.5899L14 17.8586L8.14142 12L14 6.14142L15.2687 7.41008L10.7592 11.9294Z"
+                                    fill="#C6CEDA" stroke="#FCFCFC" stroke-width="0.2" />
+                            </svg> Voltar Página
+                        </button>
+                    </div>
+
+
+                    <div class="d-flex flex-row align-middle justify-content-right EditRequeriment"
+                        onclick="editRequeriment()">
+                        <div class="pt-4">
+
+
+                            <button class="status">
+                                <div class="tag-orange me-2"> &nbsp; &nbsp; &nbsp; &nbsp; </div> <span class="orange">
+                                    Pendente/Usuário
+                                </span>
+                            </button>
+                            <p class="history-status pt-1  ps-5">Ter, 17 de maio às 9:46 a.m</p>
+                        </div>
+                        <div class="ps-4 pt-4">
+                            <svg width="8" height="40" viewBox="0 0 8 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="36" r="4" transform="rotate(-90 4 36)" fill="#717171" />
+                                <circle cx="4" cy="20" r="4" transform="rotate(-90 4 20)" fill="#717171" />
+                                <circle cx="4" cy="4" r="4" transform="rotate(-90 4 4)" fill="#717171" />
+                            </svg>
+
+                        </div>
+
+                    </div>
+                </header>
+
+
+
+
+                <!---Adicione o conteúdo aqui-->
+                <div class="px-4 ">
+                    <h2>Título da chamada</h2>
+                    <div class="d-flex subtitulo-status">
+                        <p>para &nbsp;
+                        <p><strong>Wawrzyniec</strong></p> &nbsp;do Setor de TI</p>
+                    </div>
+                    <div class="history-body pt-4">
+                        <p>Precisamos que o aluno tenha acesso ao seu portal, mesmo depois de não estar mais estutando
+                            da faculdade. O acesso dele deve ser limitado ao financeiro, para emissão de declaração de
+                            despesas para imposto de renda,
+                            e acesso aos boletos para pagamento de valores em aberto. Anexo um comentário do Thiago
+                            sobre o assunto.</p>
+                    </div>
+                    <div class="box-comment">
+                        <p>Comentário</p>
+
+                        <!----->
+                        <div class="box-comment">
+
+                            <div class="l-comment px-3">
+                                <p>Qua, 14 de Maio às 13:40 pm</p>
+                            </div>
+                            <textarea type="textarea" cols="30" rows="8" class="comment px-3" disabled>Possuímos um grupo no unimestre que está condicionado a (Estudantes - Inativos) (anexo), podemos pedir para configurar apenas o que precisarem nesse grupo.. o Financeiro e Requerimentos ja fica disponível para eles... Precisaríamos colocar apenas a impressão do imposto de renda no caso?
+                        </textarea>
+                            <div class="text-area d-flex justify-content-between align-items-center">
+                                <div class="px-3 py-2">
+                                    <button class="btn-anexo">
+                                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_2_440)">
+                                                <path
+                                                    d="M7.00008 3.99999V11.6667C7.00008 13.14 5.80675 14.3333 4.33341 14.3333C2.86008 14.3333 1.66675 13.14 1.66675 11.6667V3.33332C1.66675 2.41332 2.41341 1.66666 3.33341 1.66666C4.25341 1.66666 5.00008 2.41332 5.00008 3.33332V10.3333C5.00008 10.7 4.70008 11 4.33341 11C3.96675 11 3.66675 10.7 3.66675 10.3333V3.99999H2.66675V10.3333C2.66675 11.2533 3.41341 12 4.33341 12C5.25341 12 6.00008 11.2533 6.00008 10.3333V3.33332C6.00008 1.85999 4.80675 0.666656 3.33341 0.666656C1.86008 0.666656 0.666748 1.85999 0.666748 3.33332V11.6667C0.666748 13.6933 2.30675 15.3333 4.33341 15.3333C6.36008 15.3333 8.00008 13.6933 8.00008 11.6667V3.99999H7.00008Z"
+                                                    fill="#C4C4C4" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_2_440">
+                                                    <rect width="9" height="16" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        Ver Anexo</button>
+                                </div>
+
+                                <div class="avatar d-flex justify-content-between align-items-center">
+                                    <p class="pe-2"> <strong>Wawrzyniec</strong><br>
+                                        Setor de TI <strong class="tg"></strong>
+                                    </p>
+                                    <img class="profile-avatar" src="/img/profile-secondy-pess.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!----->
+                        <div class="box-comment">
+
+                            <div class="l-comment-r px-3 ">
+                                <p>Qua, 14 de Maio às 13:40 pm</p>
+                            </div>
+                            <textarea type="textarea" class="comment px-3 primeiro" disabled>Possuímos um grupo no unimestre que está condicionado a (Estudantes - Inativos) (anexo), podemos pedir para configurar apenas o que precisarem nesse grupo.. o Financeiro e Requerimentos ja fica disponível para eles... Precisaríamos colocar apenas a impressão do imposto de renda no caso?
+                        </textarea>
+                            <div class="text-area d-flex justify-content-between align-items-center">
+                                <div class="px-3 py-2">
+                                    <button class="btn-anexo primeiro">
+                                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_2_440)">
+                                                <path
+                                                    d="M7.00008 3.99999V11.6667C7.00008 13.14 5.80675 14.3333 4.33341 14.3333C2.86008 14.3333 1.66675 13.14 1.66675 11.6667V3.33332C1.66675 2.41332 2.41341 1.66666 3.33341 1.66666C4.25341 1.66666 5.00008 2.41332 5.00008 3.33332V10.3333C5.00008 10.7 4.70008 11 4.33341 11C3.96675 11 3.66675 10.7 3.66675 10.3333V3.99999H2.66675V10.3333C2.66675 11.2533 3.41341 12 4.33341 12C5.25341 12 6.00008 11.2533 6.00008 10.3333V3.33332C6.00008 1.85999 4.80675 0.666656 3.33341 0.666656C1.86008 0.666656 0.666748 1.85999 0.666748 3.33332V11.6667C0.666748 13.6933 2.30675 15.3333 4.33341 15.3333C6.36008 15.3333 8.00008 13.6933 8.00008 11.6667V3.99999H7.00008Z"
+                                                    fill="#C4C4C4" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_2_440">
+                                                    <rect width="9" height="16" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        Ver Anexo</button>
+                                </div>
+
+                                <div class="avatar d-flex justify-content-between align-items-center">
+                                    <p class="pe-2"> <strong>Vinicius Alfredo</strong><br>
+                                        financeiro <strong class="tg">(Você)</strong>
+                                    </p>
+                                    <img class="profile-avatar" src="/img/profile.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!----->
+                        <div class="box-comment">
+
+                            <div class="l-comment px-3">
+                                <p>Qua, 14 de Maio às 13:40 pm</p>
+                            </div>
+                            <textarea type="textarea" class="comment px-3" disabled>Possuímos um grupo no unimestre que está condicionado a (Estudantes - Inativos) (anexo), podemos pedir para configurar apenas o que precisarem nesse grupo.. o Financeiro e Requerimentos ja fica disponível para eles... Precisaríamos colocar apenas a impressão do imposto de renda no caso?
+                            </textarea>
+                            <div class="text-area d-flex justify-content-between align-items-center">
+                                <div class="px-3 py-2">
+                                    <button class="btn-anexo">
+                                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_2_440)">
+                                                <path
+                                                    d="M7.00008 3.99999V11.6667C7.00008 13.14 5.80675 14.3333 4.33341 14.3333C2.86008 14.3333 1.66675 13.14 1.66675 11.6667V3.33332C1.66675 2.41332 2.41341 1.66666 3.33341 1.66666C4.25341 1.66666 5.00008 2.41332 5.00008 3.33332V10.3333C5.00008 10.7 4.70008 11 4.33341 11C3.96675 11 3.66675 10.7 3.66675 10.3333V3.99999H2.66675V10.3333C2.66675 11.2533 3.41341 12 4.33341 12C5.25341 12 6.00008 11.2533 6.00008 10.3333V3.33332C6.00008 1.85999 4.80675 0.666656 3.33341 0.666656C1.86008 0.666656 0.666748 1.85999 0.666748 3.33332V11.6667C0.666748 13.6933 2.30675 15.3333 4.33341 15.3333C6.36008 15.3333 8.00008 13.6933 8.00008 11.6667V3.99999H7.00008Z"
+                                                    fill="#C4C4C4" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_2_440">
+                                                    <rect width="9" height="16" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        Ver Anexo</button>
+                                </div>
+
+                                <div class="avatar d-flex justify-content-between align-items-center">
+                                    <p class="pe-2"> <strong>Wawrzyniec</strong><br>
+                                        Setor de TI <strong class="tg"></strong>
+                                    </p>
+                                    <img class="profile-avatar" src="/img/profile-secondy-pess.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!----->
+                        <div class="l-comment px-3 pt-2">
+                            <p>Qua, 14 de Maio às 13:40 pm</p>
+                        </div>
+                        <textarea type="textarea" cols="30" rows="8" class="comment px-3"
+                            placeholder="Responda a mensagem....">
+                        </textarea>
+                        <div class="text-area d-flex justify-content-between align-items-center send ">
+                            <div class="px-3 py-2 ">
+                                <button class="btn-anexo">
+                                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2_440)">
+                                            <path
+                                                d="M7.00008 3.99999V11.6667C7.00008 13.14 5.80675 14.3333 4.33341 14.3333C2.86008 14.3333 1.66675 13.14 1.66675 11.6667V3.33332C1.66675 2.41332 2.41341 1.66666 3.33341 1.66666C4.25341 1.66666 5.00008 2.41332 5.00008 3.33332V10.3333C5.00008 10.7 4.70008 11 4.33341 11C3.96675 11 3.66675 10.7 3.66675 10.3333V3.99999H2.66675V10.3333C2.66675 11.2533 3.41341 12 4.33341 12C5.25341 12 6.00008 11.2533 6.00008 10.3333V3.33332C6.00008 1.85999 4.80675 0.666656 3.33341 0.666656C1.86008 0.666656 0.666748 1.85999 0.666748 3.33332V11.6667C0.666748 13.6933 2.30675 15.3333 4.33341 15.3333C6.36008 15.3333 8.00008 13.6933 8.00008 11.6667V3.99999H7.00008Z"
+                                                fill="#C4C4C4" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2_440">
+                                                <rect width="9" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    Ver Anexo
+                                </button>
+                                <span class="tag-anexo">2</span>
+                                <span class="tag-description-anexo ">
+                                   <p> Aceitamos apenas JPG, PNG e PDF com o tamanho máximo de até 24MB
+                                </p></span>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn-send-msg pe-2"> Responder
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2_238)">
+                                            <path
+                                                d="M1.84266 2.75L21.0835 11L1.84266 19.25L1.8335 12.8333L15.5835 11L1.8335 9.16667L1.84266 2.75Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2_238">
+                                                <rect width="21" height="21" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+                <div class="footer mt-5">
+                    &nbsp; Todos os direitos reservados ao Centro Universitário Avantis.
+    
+                </div>
+            </div>
+            
+        </div>   
+            <script src="/js/nav.js"></script>
+            <script src="/js/main.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+                integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+                integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+                crossorigin="anonymous"></script>
+            <script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
+
+</body>
+
+</html>

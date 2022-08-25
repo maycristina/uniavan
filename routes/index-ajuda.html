@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logo-favicon.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/style/main.css">
+    <link rel="stylesheet" href="/style/nav/header.css">
+    <link rel="stylesheet" href="/style/nav/navbar.css">
+    <link rel="stylesheet" href="/style/search/search.css">
+   
+        
+        <link rel="stylesheet" href="/style/filter/filter.css">
+        <link rel="stylesheet" href="/style/card/main-login.css">
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Lexend:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Ajuda</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div>
+                <img src="/img/Logo M.png" alt="">
+            </div>
+            <ul>
+                <a href="/index.html"> <li >Chamadas</li></a>
+                 <a href="/routes/Departamento/gestores/view-membros-gestor.html"><li >Departamento</li></a>
+                 <a href="/routes/index-profile.html"><li>Perfil</li></a>
+                 <a href="/routes/index-ajuda.html"><li class="pagina-atual">Ajuda</li></a> 
+                 <a href="/routes/index-login.html" class="logout"><li>Logout</li></a>
+             </ul>
+             <div>
+                 <img src="/img/LOGO-rodape.png" alt="">
+             </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <header class="d-flex justify-content-between px-4">
+                    <div class=" pt-4">
+                        <button class="btn-back-page" onclick="history.back()">                                 
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.7592 11.9294L10.6887 12L10.7592 12.0706L15.2687 16.5899L14 17.8586L8.14142 12L14 6.14142L15.2687 7.41008L10.7592 11.9294Z" fill="#C6CEDA" stroke="#FCFCFC" stroke-width="0.2"/>
+                                </svg> Voltar Página
+                            </button>
+                    </div>
+
+                    
+                    <div class="d-flex align-items-center">
+                        <h4>Ajuda</h4>
+                    </div>
+                        
+                    
+                </header> 
+
+
+
+
+
+
+                <div class="row">
+                    <div class="col d-flex flex-column justify-content-center mt-5 mb-5">
+                       
+                            <div class="col input-search">
+                                <input type="text" class="form-control shadow-none" arial-label="exemple" placeholder="Buscar por nome, departamento"/>
+                                <button>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.5365 11.18L11.6091 11.25H11.71H12.3963L17.1366 15.9998L15.9998 17.1366L11.25 12.3963V11.71V11.6091L11.18 11.5365L10.91 11.2565L10.7461 11.0865L10.567 11.2404C9.47058 12.183 8.04787 12.75 6.5 12.75C3.04807 12.75 0.25 9.95193 0.25 6.5C0.25 3.04807 3.04807 0.25 6.5 0.25C9.95193 0.25 12.75 3.04807 12.75 6.5C12.75 8.04787 12.183 9.47058 11.2404 10.567L11.0865 10.7461L11.2565 10.91L11.5365 11.18ZM1.75 6.5C1.75 9.12807 3.87193 11.25 6.5 11.25C9.12807 11.25 11.25 9.12807 11.25 6.5C11.25 3.87193 9.12807 1.75 6.5 1.75C3.87193 1.75 1.75 3.87193 1.75 6.5Z" fill="#C4C4C4" stroke="white" stroke-width="0.5"/>
+                                        </svg>
+                                        
+                                        
+                                     </button>
+                            </div>
+                            
+                    </div>
+                </div>
+
+                <div class="row pb-5">
+                    <div class="col d-flex justify-content-center">
+
+                   
+                    <div class="help pb-5">
+                                        
+                        <button class="accordion ">
+                            <div class="svg-icon">
+                                Como realizar uma chamada?                           
+                            
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8H0" stroke="#DADADA" stroke-width="2"/>
+                                <path d="M8 -9.23872e-07L8 16" stroke="#DADADA" stroke-width="2"/>
+                                </svg>
+                                 </div>
+                        </button>
+                           
+                            
+                        <div class="panel pb-2">
+                            <p>Na página de <b>Chamadas</b> é possível visualizar um botão azul com título <b>"Nova solicitação"</b> ao lado do menu de abas. 
+                                essa função irá lhe direcionar para a página de formulários de chamada (Como mostra na imagem abaixo)
+                                
+                                </p>
+                                <img src="/img/como-realizar-uma-chamada.png" alt="" class=" py-4">
+                                
+                        </div>
+
+                        <button class="accordion">
+                            <div class="svg-icon">
+                                
+                                Como visualizar as chamadas que realizei?
+                                
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 8H0" stroke="#DADADA" stroke-width="2"/>
+                                    <path d="M8 -9.23872e-07L8 16" stroke="#DADADA" stroke-width="2"/>
+                                    </svg>
+                                    
+                            </div>
+                            
+                            
+                        </button>
+                        <div class="panel py-2">
+                            <p> Na página de <b>Chamadas</b> existe um botão flutuante que com três abas. Na sessão <b>"enviados"</b> estará as mensagens que você enviou para outros colaboradores.
+                            </p>
+                            <img src="/img/como-visualizar-uma-chamada-que-realizei.png" alt="" class="py-4">
+                        </div>
+
+                        <button class="accordion">
+                            <div class="svg-icon">
+                                Onde está localizada as chamadas feitas para mim?
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 8H0" stroke="#DADADA" stroke-width="2"/>
+                                    <path d="M8 -9.23872e-07L8 16" stroke="#DADADA" stroke-width="2"/>
+                                    </svg>
+                            </div>
+                           </button>
+                        <div class="panel py-2">
+                            <p>
+                                 Na página de <b>Chamadas</b> existe um botão flutuante que com três abas. Na sessão <b>"recebidos"</b> estará as 
+                                 mensagens enviadas de outros colaboradores para você.
+                            </p>
+                            <img src="/img/onde -esta-localizada-as-chamadas-feitas-para-mim.png">
+                        </div>
+                        <button class="accordion">
+                            <div class="svg-icon">
+                                Como visualizar os detalhes da chamada?
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 8H0" stroke="#DADADA" stroke-width="2"/>
+                                    <path d="M8 -9.23872e-07L8 16" stroke="#DADADA" stroke-width="2"/>
+                                    </svg>
+                            </button>
+                        <div class="panel py-2">
+                            <p>Na tabela, utilize seu mouse para <stronger>clicar em um item da lista</stronger> apresentada
+                                e então você será direcionado para a página de detalhes daquele item. 
+                            </p>
+                            <img src="/img/como-visualizar-os-detalhes-chamada.png" alt="">
+                        </div>
+                        <button class="accordion">
+                            <div class="svg-icon">Como alterar/configurar as chamadas enviadas para mim?
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 8H0" stroke="#DADADA" stroke-width="2"/>
+                                    <path d="M8 -9.23872e-07L8 16" stroke="#DADADA" stroke-width="2"/>
+                                    </svg>
+                                    
+                            </div>
+                            </button>
+                        <div class="panel py-2">
+                            <p>
+                                Na página de detalhes da chamada, o usuário poderá encontrar no cabeçalho do lado esquerdo a função de "Voltar página" e do <b><b>lado direito</b></b> a função de "Status da tarefa", "Dia, data e hora" e "icone de configuração (3 pontinhos)", ao clicar será possível alterar/configurar a chamada.
+                                </p>
+                                <img src="/img/como-alterar-chamada.png" alt="" srcset="">
+                        </div>
+                        <button class="accordion">
+                            <div class="svg-icon">O que pode ser alterado na página de chamadas?
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 8H0" stroke="#DADADA" stroke-width="2"/>
+                                    <path d="M8 -9.23872e-07L8 16" stroke="#DADADA" stroke-width="2"/>
+                                    </svg>
+                                    
+                            </div>
+                            </button>
+                        <div class="panel py-2">
+                            <p>
+                                Na página de alteração de chamadas o colaborador poderá:
+                                <ul>
+                                    <li>
+                                        Redirecionar o polo, o departamento/setor e colaborador
+                                    </li>
+                                    <li>
+                                        O nível de prioridade (Baixa, média ou alta)
+                                    </li>
+                                    <li>
+                                        O status da mensagem (pendente/usuário, pendente/você, negado ou resolvido)
+                                    </li>
+                                </ul> 
+                               
+                                
+                            </p>
+                        </div>
+                        <button class="accordion">
+                            <div class="svg-icon">Onde encontrar o histórico de chamadas enviadas e recebidas?
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 8H0" stroke="#DADADA" stroke-width="2"/>
+                                    <path d="M8 -9.23872e-07L8 16" stroke="#DADADA" stroke-width="2"/>
+                                    </svg>
+                                    
+                            </div>
+                            </button>
+                        <div class="panel py-2 pt-1">
+                            <p>
+                                Na página de chamadas existe uma aba de histórico com todas listas de mensagens enviadas e recebidas. 
+                                Nela é possível filtrar a exibição e observar a quantidade de chamadas, ou no caso do gestor, terá o registro de todas realizadas pelo
+                                departamento no qual ele é encarregado.
+                            </p>
+                            <img src="/img/history.png" alt="">
+                        </div>
+                        <button class="accordion">
+                            <div class="svg-icon">É possível encontrar os colaboradores do meu departamento?
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 8H0" stroke="#DADADA" stroke-width="2"/>
+                                    <path d="M8 -9.23872e-07L8 16" stroke="#DADADA" stroke-width="2"/>
+                                    </svg>
+                                    
+                            </div>
+                            </button>
+                        <div class="panel py-2 pt-1">
+                            <p>
+                                Sim, no menu de navegação, a esquerda, é possível visualizar o botão de <b><b>Departamento</b></b> onde é listado todos os colaboradores da sua equipe. 
+                               Será possível visualizar os detalhes do perfil e atribuições. Para administradores, será possível adicionar membros e realizar alterações.
+                            </p>
+                            <img src="/img/history.png" alt="">
+                        </div>
+                        <button class="accordion">
+                            <div class="svg-icon">Onde posso localizar outros departamentos?
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 8H0" stroke="#DADADA" stroke-width="2"/>
+                                    <path d="M8 -9.23872e-07L8 16" stroke="#DADADA" stroke-width="2"/>
+                                    </svg>
+                                    
+                            </div>
+                            </button>
+                        <div class="panel py-2 pt-1">
+                            <p>
+                                Dentro da página de departamento, existe um menu flutuante com a aba "membros (onde está a lista de contribuintes do seu setor) e "setores" (a lista de departamentos de todas as cidades).
+                                Nela você pode localizar departamentos e visualizar a lista de contribuintes.
+                            </p>
+                            <img src="/img/aba setores.png" alt="">
+                        </div>
+                        <button class="accordion">
+                            <div class="svg-icon">Como alterar um perfil de um colaborador do meu setor?
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 8H0" stroke="#DADADA" stroke-width="2"/>
+                                    <path d="M8 -9.23872e-07L8 16" stroke="#DADADA" stroke-width="2"/>
+                                    </svg>
+                                    
+                            </div>
+                            </button>
+                        <div class="panel py-2 pt-1">
+                            <p>
+                                Alterar/Configurar um perfil de colaborador é uma opção liberada apenas para getores ou administradores, certifique-se se seu usuário se enquadra em um deles. 
+                                E dentro da página de <b><b> departamento,</b></b> na aba <b><b>membros</b></b> clique no perfil que deseja alterar, logo, será 
+                                direcionado para a página de alteração, após configurar clique em <b> "salvar alteração". </b>
+                            </p>
+                           
+                        </div>
+                        <button class="accordion">
+                            <div class="svg-icon">Como alterar minha foto ou nome de usuário?
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 8H0" stroke="#DADADA" stroke-width="2"/>
+                                    <path d="M8 -9.23872e-07L8 16" stroke="#DADADA" stroke-width="2"/>
+                                    </svg>
+                                    
+                            </div>
+                            </button>
+                        <div class="panel py-2 pt-1">
+                            <p>
+                                No menu de navegação, acesse a opção de perfil, nela poderá alterar o seu nome de usuário, senha e foto de perfil. Os campos de setor e nível de acesso, apenas administradores podem alterar, se 
+                                é o seu caso, envie um chamado para o RH.
+                            </p>
+                           
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+
+                
+
+            </div>
+
+            <script src="/js/main.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+                integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+                integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

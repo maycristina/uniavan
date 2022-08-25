@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logo-favicon.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/style/main.css">
+    <link rel="stylesheet" href="/style/nav/header.css">
+    <link rel="stylesheet" href="/style/nav/navbar.css">
+    <link rel="stylesheet" href="/style/search/search.css">
+    <link rel="stylesheet" href="/style/table/light-green.css">
+    <link rel="stylesheet" href="/style/table/light-blue.css">
+        <link rel="stylesheet" href="/style/Tag/tags.css"> <!--tags-->
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Lexend:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <title>Departamento/Setores</title>
+</head>
+
+<body>
+    <div class="container">
+        <span class="nav-sm" onclick="clickResponsive()"></span>
+        <div class="nav">
+            <div>
+                <img src="/img/Logo M.png" alt="">
+            </div>
+            <ul>
+                <a href="/index.html"> <li >Chamadas</li></a>
+                 <a href="/routes/Departamento/Adm/view-membros-adm.html"><li class="pagina-atual">Departamento</li></a>
+                 <a href="/routes/index-profile.html"><li>Perfil</li></a>
+                 <a href="/routes/index-ajuda.html"><li>Ajuda</li></a> 
+                 <a href="/routes/index-login.html" class="logout"><li>Logout</li></a>
+             </ul>
+             <div>
+                 <img src="/img/LOGO-rodape.png" alt="">
+             </div>
+        </div>
+        <div class="nav-sm-active" id="menu-sm">  <!---Menu Smartphone-->
+            <span class="esc" onclick="esc()"></span>
+            <div>
+                <img src="/img/Logo M.png" alt="">
+            </div>
+            <ul>
+                <a href="/index.html"> <li>Chamadas</li></a>
+                 <a href="/routes/Departamento/Adm/view-membros-adm.html"><li   class="pagina-atual">Departamento</li></a>
+                 <a href="/routes/index-profile.html"><li>Perfil</li></a>
+                 <a href="/routes/index-ajuda.html"><li>Ajuda</li></a> 
+                 <a href="/routes/index-login.html" class="logout"><li>Logout</li></a>
+             </ul>
+             <div>
+                 <img src="/img/LOGO-rodape.png" alt="">
+                 
+             </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <header class="d-flex justify-content-betweent">
+                    <div class="pt-4">
+                        <h3>Setores</h3>
+                        <p class="subtitle">Nessa aba é possível acompanhar os <b>setores</b> da Uniavan e adicionar novos departamentos.
+                        </p>
+                    </div>
+
+                    
+                    <div class="d-flex flex-row align-middle">
+                        <div class="card-profile pt-4 pe-2">
+                            <h4>Vinicius Alfredo</h4>
+                            <p>Financeiro</p>
+                        </div>
+                        <div>
+                            <div class="profile">
+                                <img src="/img/profile.png" alt="">
+                            </div>
+                            <div class="notification">
+                                <img src="/img/icon-notification.png" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </header>
+
+                <div class="row">
+                    <div class="menu">
+                        <div class="suspenso">
+                            <ul>
+                                <a href="view-membros-adm.html"><li>Membros</li></a>
+                                <a href="view-setores-adm.html"  class="aba-atual"><li>Setores</li></a>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="box-menu">
+                            <button id="btn-cta-blue" onclick="window.location.href='add/add.html'">Nova Solicitação <img src="/img/add_24px.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col input-search">
+                        <input type="text" class="form-control shadow-none" arial-label="exemple" placeholder="Buscar por departamento"/>
+                        <button class="btn-search">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="rgb(196, 196, 196)" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.5365 11.18L11.6091 11.25H11.71H12.3963L17.1366 15.9998L15.9998 17.1366L11.25 12.3963V11.71V11.6091L11.18 11.5365L10.91 11.2565L10.7461 11.0865L10.567 11.2404C9.47058 12.183 8.04787 12.75 6.5 12.75C3.04807 12.75 0.25 9.95193 0.25 6.5C0.25 3.04807 3.04807 0.25 6.5 0.25C9.95193 0.25 12.75 3.04807 12.75 6.5C12.75 8.04787 12.183 9.47058 11.2404 10.567L11.0865 10.7461L11.2565 10.91L11.5365 11.18ZM1.75 6.5C1.75 9.12807 3.87193 11.25 6.5 11.25C9.12807 11.25 11.25 9.12807 11.25 6.5C11.25 3.87193 9.12807 1.75 6.5 1.75C3.87193 1.75 1.75 3.87193 1.75 6.5Z" fill="#C4C4C4" stroke="white" stroke-width="0.5"/>
+                            </svg>
+                             </button>
+                    </div>
+                </div>
+
+
+                <div class="row pt-5">
+                    <div class="col bg-table mx-2">
+                        <table class="table table-light-blue">
+                            <thead>
+                                <tr>
+                                    <th scope="col"> 
+                                        <span>
+                                            Departamento  <span class="select-style">    
+                                         <select> 
+                                            <option value="'">Almoxarifado</option> 
+                                            <option value="'">Financeiro</option>    
+                                            <option value="'">X</option> 
+                                            <option value="'">Y</option>    
+                                            <option value="'">Z</option>     
+                                        </select></span></span>   
+                                    </th>
+                                    <th scope="col " class="ocultar"> 
+                                        <span>
+                                            Gestor <span class="select-style">    
+                                         <select> 
+                                            <option value="'">A</option> 
+                                            <option value="'">B</option>    
+                                            <option value="'">C</option> 
+                                            <option value="'">D</option>    
+                                            <option value="'">E</option>     
+                                        </select></span></span>                                                                     
+                                    </th>
+                                    <th scope="col">
+                                        <span>
+                                            Membros  <span class="select-style">    
+                                         <select> 
+                                            <option value="'">3</option> 
+                                            <option value="'">4</option>    
+                                            <option value="'">5</option> 
+                                            <option value="'">6</option>    
+                                            <option value="'">7</option>     
+                                        </select></span></span>   
+                                        </th>
+                                        <th scope="col">
+                                            <span>
+                                                Local <span class="select-style">    
+                                             <select> 
+                                                <option value="'">Balneário Camboriu</option> 
+                                                <option value="'">Blumenau</option>    
+                                                <option value="'">Brusque</option> 
+                                                <option value="'">Florianópolis</option>    
+                                                <option value="'">Itajaí</option>
+                                                <option value="'">Itapema</option> 
+                                                <option value="'">Joinville</option>
+                                                <option value="'">Lages</option>
+                                                <option value="'">Rio do Sul</option>                
+                                            </select></span></span>   
+                                        </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"> Almoxarifado </th>
+                                    <td class="ocultar">Cláudio Luiz</td>
+                                    <td>10</td>
+                                    <td>Balneário Camboriú</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Financeiro</th>
+                                    <td class="ocultar">Jonathan Silva</td>
+                                    <td>8</td>  
+                                    <td>Blumenau</td>                          
+                                </tr>
+                                <tr>
+                                    <th scope="row">Comercial</th>
+                                    <td class="ocultar">Taynara Cristine</td>
+                                    <td>7</td>
+                                    <td>Brusque</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">TI</th>
+                                    <td class="ocultar">Fernando</td>
+                                    <td>4</td>
+                                    <td>Itapema</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Editorial</th>
+                                    <td class="ocultar">Kleber Felipe</td>
+                                    <td>8</td>
+                                    <td>Florianópolis</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="footer">
+                        &nbsp; Todos os direitos reservados ao Centro Universitário Avantis.
+        
+                    </div>
+                   
+                </div>
+                <div class="smartphone-action">
+                    <button id="bta-cta-sm" onclick="window.location.href='add/add.html'">Departamento &nbsp;<img src="/img/add_24px.png" alt=""></button>
+                </div>
+
+            </div>
+            <script src="/js/nav.js"></script>
+            <script src="/js/main.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+                integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+                integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

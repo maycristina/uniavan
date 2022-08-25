@@ -1,0 +1,154 @@
+
+
+.tag-high{
+    color:#CA1111;
+    font-weight: 600;
+}
+
+.tag-medium{
+    color:#E88B00;
+    font-weight: 600;
+}
+
+.tag-low{
+    color:#C1B43E;
+    font-weight: 600;
+}
+
+/* ~ Detalhes de status */
+
+.tag-dark-gray{
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background-color: #717171;
+}
+
+
+
+.tag-orange{
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background-color: #FF9900;
+    color: #FF9900;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.orange{
+    color: #FF9900;
+}
+
+
+.status{
+    /*
+    height: 32px; */
+    width: auto;
+    padding: 4px 18px;
+    border:1px solid #E6E9EF;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+}
+
+
+
+.history-status{
+    font-size:12px;
+}
+
+.subtitulo-status{
+    font-size:14px;
+    font-weight: 300;
+}
+
+.subtitulo-status strong{
+    font-weight: 500;
+
+}
+
+.history-body{
+    font-family: 'Lexend';
+    color:#AEAEAE;
+    font-size: 16px;
+    font-weight: 300;
+    width:60vw;
+    padding: 0 0 4px 0;
+
+}
+
+.tag-anexo{
+    position: absolute;
+    margin: -35px 0 0 110px;
+    padding: 8px 14px;
+    border-radius: 50px;
+    background-color:#E7F9FB;
+    color:#4EBFD9;
+    font-size:14px;
+}
+
+.tag-description-anexo{
+    color:#AEAEAE;
+    font-size:8px;
+}
+
+@media(min-width:250px) and (max-width:800px){
+    .status{
+        margin:0 0 0 60px;
+        padding: 2px 8px;
+        font-size: 10px;
+    }
+    
+    .tag-orange{
+    width: 6px;
+    height: 6px;
+    }
+    
+    .EditRequeriment{
+        right:-10px;
+         margin: 28px 0 0 50px;
+        width: 450px;
+        display: flex;
+    }
+
+    .EditRequeriment svg{
+        width: 4px;
+    }
+
+    .history-status{
+        font-size:10px !important;
+    }
+
+
+        
+    .history-body{
+        font-family: 'Lexend';
+        color:#AEAEAE;
+        font-size: 10px;
+        font-weight: 300;
+        width:90vw !important;
+        padding: 0 4px;
+
+    }
+
+    .tag-anexo{
+        position: absolute;
+        margin:0;
+        padding: 8px 14px;
+        border-radius: 50px;
+        background-color:#E7F9FB;
+        color:#4EBFD9;
+        font-size:14px;
+    }
+
+    
+    .tag-description-anexo{
+        margin: 10px 0 0 0;
+        color:#AEAEAE;
+        font-size:8px;
+    }
+}
