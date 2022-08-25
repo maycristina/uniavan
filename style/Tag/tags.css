@@ -71,6 +71,16 @@
 
 }
 
+@media(min-width:250px) and (max-width:800px){
+    .subtitulo-status p{
+        font-size:14px !important;
+    }
+    .text-area{
+        margin: 0 !important;;
+    } 
+    
+}
+
 .history-body{
     font-family: 'Lexend';
     color:#AEAEAE;

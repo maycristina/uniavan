@@ -135,10 +135,16 @@
    .add-search-member{
     margin:0 0 0 -40px;
    }
-.add-setor table{
-    width: 90vw;
+
+    .add-setor {
+      width: 100vw !important;
+    }
+
+    .add-setor table{
+    width: 90vw !important;
     margin: 0 0 0 -40px;
-}
+    padding: 0;
+    }
 
         
     .edit-profile {
@@ -195,7 +201,7 @@
 
 
 .input-add-departament input{
-    width: 80%;
+    width: 90%;
 }
 
 }

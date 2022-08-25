@@ -63,13 +63,17 @@
 }
 
 @media (min-width:250px) and (max-width:800px){
-    .box-add-edit-departament{
+ /*    .box-add-edit-departament{
         width: 99vw !important;
         padding: 32px 0 16px 0;
         display: flex;
         flex-direction: column;
         justify-content: center !important;
         border:none;
-        background-color: red;
+    } */
+
+    .box-add-edit-departament{
+        display:none
     }
+
 }

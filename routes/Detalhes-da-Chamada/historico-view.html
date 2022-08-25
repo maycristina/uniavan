@@ -27,6 +27,7 @@
 
 <body>
     <div class="container">
+        <span class="nav-sm" onclick="clickResponsive()"></span>
         <div class="nav">
             <div>
                 <img src="/img/Logo M.png" alt="">
@@ -40,9 +41,38 @@
             </ul>
         </div>
 
-        <div class="row">
+        <div class="nav-sm-active" id="menu-sm">
+            <!---Menu Smartphone-->
+            <span class="esc" onclick="esc()"></span>
+            <div>
+                <img src="/img/Logo M.png" alt="">
+            </div>
+            <ul>
+                <a href="/index.html">
+                    <li>Chamadas</li>
+                </a>
+                <a href="/routes/Departamento/Adm/view-membros-adm.html">
+                    <li>Departamento</li>
+                </a>
+                <a href="/routes/index-profile.html">
+                    <li>Perfil</li>
+                </a>
+                <a href="/routes/index-ajuda.html">
+                    <li>Ajuda</li>
+                </a>
+                <a href="/routes/index-login.html" class="logout">
+                    <li>Logout</li>
+                </a>
+            </ul>
+            <div>
+                <img src="/img/LOGO-rodape.png" alt="">
+
+            </div>
+        </div>
+
+        <div class="row sm-call">
             <div class="col">
-                <header class="d-flex justify-content-between px-4">
+                <header class="d-flex justify-content-between px-4 articles">
                     <div class=" pt-4">
                         <button class="btn-back-page" onclick="history.back()"> 
                            
@@ -108,7 +138,7 @@
                 &nbsp;  Todos os direitos reservados ao Centro Universitário Avantis.
         
             </div>
-
+            <script src="/js/nav.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
                 integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
                 crossorigin="anonymous"></script>
