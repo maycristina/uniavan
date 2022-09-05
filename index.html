@@ -5,344 +5,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/logo-favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="style/main.css">
     <link rel="stylesheet" href="style/nav/header.css">
     <link rel="stylesheet" href="style/nav/navbar.css">
     <link rel="stylesheet" href="style/search/search.css">
-    <link rel="stylesheet" href="/style/table/light-green.css">
-        <link rel="stylesheet" href="/style/Tag/tags.css"> <!--tags-->
+    <link rel="stylesheet" href="style/table/light-green.css">
+    <link rel="stylesheet" href="style/table/light-blue.css">
+    <link rel="stylesheet" href="style/Tag/tags.css">
+    <!--tags-->
+    <link rel="stylesheet" href="style/card/main-login.css">
     <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Lexend:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Lexend:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <title>Chamadas/Recebidos</title>
+    <title>Login</title>
 </head>
 
 <body>
-    <div class="container">
-        <span class="nav-sm" onclick="clickResponsive()"></span>
-        <div class="nav">
-            <div>
-                <img src="/img/Logo M.png" alt="">
-            </div>
-            <ul>
-                <a href="/index.html"> <li class="pagina-atual">Chamadas</li></a>
-                 <a href="/routes/Departamento/Adm/view-membros-adm.html"><li>Departamento</li></a>
-                 <a href="/routes/index-profile.html"><li>Perfil</li></a>
-                 <a href="/routes/index-ajuda.html"><li>Ajuda</li></a> 
-                 <a href="/routes/index-login.html" class="logout"><li>Logout</li></a>
-             </ul>
-             <div>
-                 <img src="/img/LOGO-rodape.png" alt="">
-             </div>
-        </div>
-
-        <div class="nav-sm-active" id="menu-sm">  <!---Menu Smartphone-->
-            <span class="esc" onclick="esc()"></span>
-            <div>
-                <img src="/img/Logo M.png" alt="">
-            </div>
-            <ul>
-                <a href="/index.html"> <li class="pagina-atual">Chamadas</li></a>
-                 <a href="/routes/Departamento/Adm/view-membros-adm.html"><li>Departamento</li></a>
-                 <a href="/routes/index-profile.html"><li>Perfil</li></a>
-                 <a href="/routes/index-ajuda.html"><li>Ajuda</li></a> 
-                 <a href="/routes/index-login.html" class="logout"><li>Logout</li></a>
-             </ul>
-             <div>
-                 <img src="/img/LOGO-rodape.png" alt="">
-                 
-             </div>
-        </div>
-
+    <div class="container background-login">
         <div class="row">
-            
             <div class="col">
-                <header>
-                    <div class=" pt-4">
-                        <h3>Enviados</h3>
-                        <p class="subtitle">Nessa aba é possível acessar apenas
-                            <b>suas solicitações.</b> Clique em qualquer item da lista para visualizar mais detalhes
-                            sobre o
-                            pedido.
-                        </p>
-                    </div>
-
-                    
-                    <div class="d-flex flex-row align-middle">
-                        <div class="card-profile pt-4 pe-2">
-                            <h4>Vinicius Alfredo</h4>
-                            <p>Financeiro</p>
-                        </div>
-                        <div>
-                            <div class="profile">
-                                <img src="/img/profile.png" alt="">
-                            </div>
-                            <div class="notification" onclick="newNotication()">
-                                <img src="/img/icon-notification.png" alt="">
-                            </div>
-                        </div>
+                <div class="card-login">
+                    <div>
+                        <img src="img/logo-Unimessages.svg" alt="" class="py-4" id="logo">
                         
+                        <p class="px-4">Centraliza sua comunicação com a equipe Uniavan,
+                            aumente a produtividade da sua equipe e gerencie.</p>
                     </div>
-                </header>
-
-
-
-
-
-                <div class="row">
-                    <div class="menu">
-                        <div class="suspenso">
-                            <ul>
-                                <a href="http://" class="aba-atual"><li>Enviados</li></a>
-                                <a href="/routes/index-recebidos.html"><li>Recebidos</li></a>
-                                <a href="/routes/index-historico.html"><li>Histórico</li></a>
-                            </ul>
-                        </div>
+                    <div class="login">
+                        <input placeholder="Digite seu email" class="form-control my-2" />
+                        <input placeholder="Digite a sua senha" class="form-control my-2" />
+                        <span class="eye-icon"><img src="img/eyes-icon.svg" alt=""></span>
+                        <span>
+                            <a href="/routes/index-recebidos.html"><button class="btn-login mt-2" onclick="NewRoute()">login</button></a>
+                        </span>
                     </div>
 
                     <div>
-                        <div class="box-menu">
-                            <button id="btn-cta-blue" onclick="NewRequisitionI()">Nova Solicitação <img src="/img/add_24px.png" alt=""></button>
+                        <p class="title-login pb-3"> Dúvidas Frequentes</p>
+
+                        <button class="accordion xarrow">
+                            <div class="svg-icon">
+                            Como posso acessar?                            
+                            
+                                <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5 0.5L5.5 5.5L0.5 0.5" stroke="#727272"/></svg> </div>
+                        </button>
+                           
+                            
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
+                        <button class="accordion xarrow">
+                            <div class="svg-icon">
+                                
+                                Tenho dúvidas sobre o usuário?
+                                
+                                    <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 0.5L5.5 5.5L0.5 0.5" stroke="#727272"/>
+                                    </svg>
+                            </div>
+                            
+                            
+                        </button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
+                        <button class="accordion xarrow">
+                            <div class="svg-icon">
+                                Como deve ser a senha<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 0.5L5.5 5.5L0.5 0.5" stroke="#727272"/>
+                                </svg>
+                            </div>
+                           </button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <button class="accordion xarrow">
+                            <div class="svg-icon">
+                                Esqueci minha senha, o que eu faço?<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.5 0.5L5.5 5.5L0.5 0.5" stroke="#727272"/>
+                                </svg>
+                            </button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <button class="accordion xarrow">
+                            <div class="svg-icon">Tenho sugestões para implementar
+                                <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.5 0.5L5.5 5.5L0.5 0.5" stroke="#727272"/>
+                                </svg>
+                            </div>
+                            </button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
-                </div>
 
-
-                <div class="row">
-                    <div class="col input-search pb-4">
-                        <input type="text" class="form-control shadow-none" arial-label="exemple" 
-                        placeholder="Buscar por título, solicitante, setor, data, status ou prioridade"/>
-                        <button>
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="rgb(196, 196, 196)" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.5365 11.18L11.6091 11.25H11.71H12.3963L17.1366 15.9998L15.9998 17.1366L11.25 12.3963V11.71V11.6091L11.18 11.5365L10.91 11.2565L10.7461 11.0865L10.567 11.2404C9.47058 12.183 8.04787 12.75 6.5 12.75C3.04807 12.75 0.25 9.95193 0.25 6.5C0.25 3.04807 3.04807 0.25 6.5 0.25C9.95193 0.25 12.75 3.04807 12.75 6.5C12.75 8.04787 12.183 9.47058 11.2404 10.567L11.0865 10.7461L11.2565 10.91L11.5365 11.18ZM1.75 6.5C1.75 9.12807 3.87193 11.25 6.5 11.25C9.12807 11.25 11.25 9.12807 11.25 6.5C11.25 3.87193 9.12807 1.75 6.5 1.75C3.87193 1.75 1.75 3.87193 1.75 6.5Z" fill="#C4C4C4" stroke="white" stroke-width="0.5"/>
-                            </svg>
-                             </button>
+                    <div class="py-4 loginlogo"  style=" margin-top: 60px;">
+                        <img src="img/LOGOUNIAVAN.png" alt="">
+                        <div style="font-size:12px; color:rgb(143, 143, 143);">
+                            Todos os direitos reservados ao Centro Universitário Avantis.
+                        </div> 
                     </div>
+                    
                 </div>
-
-
-                <div class="row">
-                    <div class="col bg-table px-5">
-                        <table class="table table-light-green mb-5">
-                            <thead>
-                                <tr>
-                                    <th class="show-title" scope="col">Título  
-                                        <span class="select-style-green"> <select> 
-                                        <option value="'">A</option> 
-                                        <option value="'">B</option>    
-                                        <option value="'">C</option> 
-                                        <option value="'">D</option>    
-                                        <option value="'">E</option>     
-                                    </select></span> </th>
-                                    <th scope="col">Solicitante  <span class="select-style-green"> <select> 
-                                        <option value="'">A</option> 
-                                        <option value="'">B</option>    
-                                        <option value="'">C</option> 
-                                        <option value="'">D</option>    
-                                        <option value="'">E</option>     
-                                    </select></span> </th>
-                                    <th scope="col">Setor  <span class="select-style-green"> <select> 
-                                        <option value="'">A</option> 
-                                        <option value="'">B</option>    
-                                        <option value="'">C</option> 
-                                        <option value="'">D</option>    
-                                        <option value="'">E</option>     
-                                    </select></span> </th>
-                                    <th scope="col">Data  <span class="select-style-green"> <select> 
-                                        <option value="'">A</option> 
-                                        <option value="'">B</option>    
-                                        <option value="'">C</option> 
-                                        <option value="'">D</option>    
-                                        <option value="'">E</option>     
-                                    </select></span> </th>
-                                    <th scope="col">Status  <span class="select-style-green"> <select> 
-                                        <option value="'">A</option> 
-                                        <option value="'">B</option>    
-                                        <option value="'">C</option> 
-                                        <option value="'">D</option>    
-                                        <option value="'">E</option>     
-                                    </select></span> </th>
-                                    <th scope="col">Prioridade  <span class="select-style-green"> <select> 
-                                        <option value="'">A</option> 
-                                        <option value="'">B</option>    
-                                        <option value="'">C</option> 
-                                        <option value="'">D</option>    
-                                        <option value="'">E</option>     
-                                    </select></span> </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr onclick="didItemSend()">
-                                    <th scope="row" class="title-table">Pedido de compra </th>
-                                    <td>Luiz Inácio</td>
-                                    <td>Financeiro Acadêmico</td>
-                                    <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
-                                    <td class="tag-high">Alta</td>
-                                </tr>
-                                <tr onclick="didItemSend()">
-                                    <th scope="row" class="title-table">Pedido de compra </th>
-                                    <td>Sidney</td>
-                                    <td>Financeiro Acadêmico</td>
-                                    <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
-                                    <td class="tag-high">Alta</td>
-                                </tr>
-                                <tr onclick="didItemSend()">
-                                    <th scope="row" class="title-table">Pedido de compra </th>
-                                    <td>Marina Silva</td>
-                                    <td>Financeiro Acadêmico</td>
-                                    <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
-                                    <td class="tag-medium">Média</td>
-                                </tr>
-                                <tr onclick="didItemSend()">
-                                    <th scope="row" class="title-table">Pedido de compra </th>
-                                    <td>Marina Silva</td>
-                                    <td>Financeiro Acadêmico</td>
-                                    <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
-                                    <td class=" tag-medium">Média</td>
-                                </tr>
-                                <tr onclick="didItemSend()">
-                                    <th scope="row" class="title-table">Pedido de compra </th>
-                                    <td>Eduardo</td>
-                                    <td>Financeiro Acadêmico</td>
-                                    <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
-                                    <td class="tag-low">Baixa</td>
-                                </tr>
-                                <tr onclick="didItemSend()">
-                                    <th scope="row" class="title-table">Pedido de compra </th>
-                                    <td>Jameson</td>
-                                    <td>Financeiro Acadêmico</td>
-                                    <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
-                                    <td class="tag-low">Baixa</td>
-                                </tr>
-                                <tr onclick="didItemSend()">
-                                    <th scope="row" class="title-table">Pedido de compra </th>
-                                    <td>Jameson</td>
-                                    <td>Financeiro Acadêmico</td>
-                                    <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
-                                    <td class="tag-low">Baixa</td>
-                                </tr>
-                                <tr onclick="didItemSend()">
-                                    <th scope="row" class="title-table">Pedido de compra </th>
-                                    <td>Jameson</td>
-                                    <td>Financeiro Acadêmico</td>
-                                    <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
-                                    <td class="tag-low">Baixa</td>
-                                </tr>
-                                <tr onclick="didItemSend()">
-                                    <th scope="row" class="title-table">Pedido de compra </th>
-                                    <td>Jameson</td>
-                                    <td>Financeiro Acadêmico</td>
-                                    <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
-                                    <td class="tag-low">Baixa</td>
-                                </tr>
-                                <tr onclick="didItemSend()">
-                                    <th scope="row" class="title-table">Pedido de compra </th>
-                                    <td>Jameson</td>
-                                    <td>Financeiro Acadêmico</td>
-                                    <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
-                                    <td class="tag-low">Baixa</td>
-                                </tr>
-                                <tr onclick="didItemSend()">
-                                    <th scope="row" class="title-table">Pedido de compra </th>
-                                    <td>Jameson</td>
-                                    <td>Financeiro Acadêmico</td>
-                                    <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
-                                    <td class="tag-low">Baixa</td>
-                                </tr>
-                                <tr onclick="didItemSend()">
-                                    <th scope="row" class="title-table">Pedido de compra </th>
-                                    <td>Jameson</td>
-                                    <td>Financeiro Acadêmico</td>
-                                    <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
-                                    <td class="tag-low">Baixa</td>
-                                </tr>
-                                <tr onclick="didItemSend()">
-                                    <th scope="row" class="title-table">Pedido de compra </th>
-                                    <td>Jameson</td>
-                                    <td>Financeiro Acadêmico</td>
-                                    <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
-                                    <td class="tag-low">Baixa</td>
-                                </tr>
-                                <tr onclick="didItemSend()">
-                                    <th scope="row" class="title-table">Pedido de compra </th>
-                                    <td>Jameson</td>
-                                    <td>Financeiro Acadêmico</td>
-                                    <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
-                                    <td class="tag-low">Baixa</td>
-                                </tr>
-                                <tr onclick="didItemSend()">
-                                    <th scope="row" class="title-table">Pedido de compra </th>
-                                    <td>Jameson</td>
-                                    <td>Financeiro Acadêmico</td>
-                                    <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
-                                    <td class="tag-low">Baixa</td>
-                                </tr><tr onclick="didItemSend()">
-                                    <th scope="row" class="title-table">Pedido de compra </th>
-                                    <td>Jameson</td>
-                                    <td>Financeiro Acadêmico</td>
-                                    <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
-                                    <td class="tag-low">Baixa</td>
-                                </tr>
-                                <tr onclick="didItemSend()">
-                                    <th scope="row" class="title-table">Pedido de compra </th>
-                                    <td>Jameson</td>
-                                    <td>Financeiro Acadêmico</td>
-                                    <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
-                                    <td class="tag-low">Baixa</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-               
-                <div class="footer">
-                    &nbsp; Todos os direitos reservados ao Centro Universitário Avantis.
+            </div>
+        </div>
+    </div>
+    </div>
     
-                </div>
-                <div class="smartphone-action">
-                    <button id="bta-cta-sm" onclick="NewRequisitionI()">Nova Solicitação <img src="/img/add_24px.png" alt=""></button>
-                </div>
-            </div>
-                              
-            </div>
-
-           
-           
-            
-            <script src="/js/nav.js"></script>
-            <script src="/js/main.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-                integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-                integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-                crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
 </body>
 
-</html> 
+</html>

@@ -81,3 +81,9 @@ var not = document.querySelector('.notification') /* Notificações */
 }
 
 
+
+function back() {
+  history.back()
+  console.log('click')
+}
+

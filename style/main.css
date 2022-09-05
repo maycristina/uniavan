@@ -164,6 +164,45 @@
     .ocultar{
         display: none;
     }
+
+    .card-login{
+        background-color: red;
+        width: 80vw !important;
+        margin:0 8% !important;
+        padding: 0;
+    }
+
+    .background-login{
+        background-color: red;
+        width: 50vw !important;
+    }
+
+    .login{
+        padding:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-login{
+        box-shadow:#00000041 1px 1px 4px !important;
+    }
+    div .login{
+        width: 100%;
+        justify-content: center;
+    }
+    div .login input{
+        width: 60vw;
+        
+    }
+    div .login button{
+        width: 60vw;
+    }
+    .eye-icon{
+        position: absolute;
+        margin:0 0 0 200px !important;
+    }
+
 }
 
 
@@ -205,27 +244,8 @@ textarea{ /*Desativar o resize do textarea*/
     font-size: 14px;
     height: 20vh;
     padding: 20px 0 0 0;
+    width: 100vw;
 }
-
-@media(min-width:250px) and (max-width:800px){
-    .footer{
-        display: flex;
-        justify-content: center;
-        font-size: 10px;
-        text-align: center;
-    }
-
-    .EditRequeriment{
-        width: 80% !important;
-    }
-
-    .btn-cta-members{
-        padding: 8px 16px;
-        margin:16px 0 32px 0;
-    }
-
-}
-
 
 /**/
 
@@ -266,3 +286,64 @@ select:focus{
     width: auto;
     height: 150px;
 }
+
+.view-geral .bg-table{
+    margin: 5em;
+}
+
+@media(min-width:250px) and (max-width:800px){
+    .footer{
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .EditRequeriment{
+        width: 80% !important;
+    }
+
+    .btn-cta-members{
+        padding: 8px 16px;
+        margin:16px 0 32px 0;
+    }
+
+    .help{
+        padding:8% 0;
+        width: 98vw !important;
+       
+    }
+    
+    .help .accordion .svg-icon{
+        font-size:0.9rem !important;
+        padding: 4px 0 4px 0 !important;
+        color: rgb(141, 141, 141) !important;
+    }
+
+    .help-page header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .help-page header h4{
+        margin:24px 0 0 0;
+    }
+    
+    .view-geral header{
+        display: flex;
+        flex-direction: row;
+        width: 100vw; 
+    }
+
+    .view-geral header h5{
+        margin:24px 0 0 0;
+        font-size: 1em;
+    }
+    
+    .view-geral .bg-table{
+        margin: 16px;
+    }
+
+}
+

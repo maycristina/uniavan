@@ -57,6 +57,7 @@ tr:active {
     text-overflow: ellipsis;
     border: 1px solid #666666;
     padding: 2% 0 !important;
+    
    } 
 
    .table>:not(caption)>*>* {
@@ -77,6 +78,7 @@ tr:active {
         justify-content: center;
         align-items: center;
         width: auto;
+        
     }
     .show-title{
         display: flex !important;
@@ -91,6 +93,7 @@ tr:active {
         width: 250px !important;
         border-right: 1px solid #cecece;
         border-bottom: 1px solid #cecece !important;
+       
      }
 
     .table-light-green tbody td{

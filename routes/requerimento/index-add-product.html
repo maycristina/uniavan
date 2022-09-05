@@ -44,7 +44,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container prod_add">
         <div class="nav">
             <div>
                 <img src="/img/Logo M.png" alt="">
@@ -61,7 +61,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row requeriment">
             <div class="col">
                 <header class="d-flex justify-content-between px-4">
                     <div class=" pt-4">
@@ -78,7 +78,7 @@
                     </div>
 
 
-                    <div class="d-flex flex-row align-middle">
+                    <div class="d-flex flex-row align-middle profile-requeriment">
                         <div class="card-profile pt-4 pe-2">
                             <h4>Vinicius Alfredo</h4>
                             <p>Financeiro</p>
@@ -117,7 +117,7 @@
                     <div class="col d-flex justify-content-center">
                         <div class="card-requeriment">
                             <h4>Adicionar produto</h4>
-                            <p style="width:35vw;">
+                            <p > <!-- style="width:35vw;" -->
                                 Nesta página é possível colocar mais produtos na lista, visualizar os produtos adicionados e pesquisar.    
                             </p>
                             <div class="row pt-4">
@@ -152,7 +152,7 @@
 
                 <div class="row py-5">
                     <div class="col input-search px-5 justify-content-center">
-                        <input type="text" class="form-control shadow-none" arial-label="exemple" placeholder="Buscar por nome, departamento"/>
+                        <input type="text" class="form-control shadow-none" arial-label="exemple" placeholder="Pesquisar..."/>
                         <button>
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="rgb(196, 196, 196)" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.5365 11.18L11.6091 11.25H11.71H12.3963L17.1366 15.9998L15.9998 17.1366L11.25 12.3963V11.71V11.6091L11.18 11.5365L10.91 11.2565L10.7461 11.0865L10.567 11.2404C9.47058 12.183 8.04787 12.75 6.5 12.75C3.04807 12.75 0.25 9.95193 0.25 6.5C0.25 3.04807 3.04807 0.25 6.5 0.25C9.95193 0.25 12.75 3.04807 12.75 6.5C12.75 8.04787 12.183 9.47058 11.2404 10.567L11.0865 10.7461L11.2565 10.91L11.5365 11.18ZM1.75 6.5C1.75 9.12807 3.87193 11.25 6.5 11.25C9.12807 11.25 11.25 9.12807 11.25 6.5C11.25 3.87193 9.12807 1.75 6.5 1.75C3.87193 1.75 1.75 3.87193 1.75 6.5Z" fill="#C4C4C4" stroke="white" stroke-width="0.5"/>
@@ -162,13 +162,13 @@
                 </div>
 
                 <div class="row pb-4">
-                    <div class="col bg-table  ">
+                    <div class="col bg-table">
                         <table class="table table-light-blue list-product">
                             <thead>
                                 <tr>
                                     <th scope="col">Produto<img src="/img/arrow-down-blue-.png" alt=""> 
                                     </th>
-                                    <th scope="col">Referência
+                                    <th scope="col" class="ocultar">Referência
                                                                                 
                                     </th>
                                     <th scope="col">Configurar
@@ -178,7 +178,7 @@
                             <tbody>
                                 <tr>
                                     <th scope="row"> Álcool</th>
-                                    <td>
+                                    <td class="ocultar">
                                         <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <rect width="37" height="37" rx="18.5" fill="#FAFAFA"/>
                                             <g clip-path="url(#clip0_127_5547)">
@@ -199,7 +199,7 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">Jonathan Silva</th>
-                                    <td><svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <td class="ocultar"><svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect width="37" height="37" rx="18.5" fill="#FAFAFA"/>
                                         <g clip-path="url(#clip0_127_5547)">
                                         <path d="M20.6038 12.3939L23.5015 11.6174C24.1358 11.4475 24.7973 11.4041 25.4483 11.4898C26.0993 11.5755 26.727 11.7886 27.2956 12.1169C27.8643 12.4452 28.3627 12.8823 28.7624 13.4032C29.1621 13.9242 29.4553 14.5187 29.6253 15.1529C29.7952 15.7872 29.8386 16.4487 29.7529 17.0997C29.6672 17.7507 29.4541 18.3784 29.1258 18.947C28.7975 19.5157 28.3604 20.0141 27.8395 20.4138C27.3185 20.8135 26.724 21.1067 26.0897 21.2767L23.192 22.0531M17.3964 23.606L14.4986 24.3825C13.8644 24.5524 13.2029 24.5958 12.5519 24.5101C11.9009 24.4244 11.2732 24.2113 10.7045 23.883C9.55611 23.22 8.71812 22.1279 8.37491 20.847C8.03169 19.5661 8.21137 18.2013 8.87441 17.0529C9.53745 15.9044 10.6295 15.0665 11.9104 14.7232L14.8082 13.9468" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -218,7 +218,7 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">Detergente</th>
-                                    <td><svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <td class="ocultar"><svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect width="37" height="37" rx="18.5" fill="#FAFAFA"/>
                                         <g clip-path="url(#clip0_127_5547)">
                                         <path d="M20.6038 12.3939L23.5015 11.6174C24.1358 11.4475 24.7973 11.4041 25.4483 11.4898C26.0993 11.5755 26.727 11.7886 27.2956 12.1169C27.8643 12.4452 28.3627 12.8823 28.7624 13.4032C29.1621 13.9242 29.4553 14.5187 29.6253 15.1529C29.7952 15.7872 29.8386 16.4487 29.7529 17.0997C29.6672 17.7507 29.4541 18.3784 29.1258 18.947C28.7975 19.5157 28.3604 20.0141 27.8395 20.4138C27.3185 20.8135 26.724 21.1067 26.0897 21.2767L23.192 22.0531M17.3964 23.606L14.4986 24.3825C13.8644 24.5524 13.2029 24.5958 12.5519 24.5101C11.9009 24.4244 11.2732 24.2113 10.7045 23.883C9.55611 23.22 8.71812 22.1279 8.37491 20.847C8.03169 19.5661 8.21137 18.2013 8.87441 17.0529C9.53745 15.9044 10.6295 15.0665 11.9104 14.7232L14.8082 13.9468" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -237,7 +237,7 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">Sabão neutro ou de coco</th>
-                                    <td><svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <td class="ocultar"><svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect width="37" height="37" rx="18.5" fill="#FAFAFA"/>
                                         <g clip-path="url(#clip0_127_5547)">
                                         <path d="M20.6038 12.3939L23.5015 11.6174C24.1358 11.4475 24.7973 11.4041 25.4483 11.4898C26.0993 11.5755 26.727 11.7886 27.2956 12.1169C27.8643 12.4452 28.3627 12.8823 28.7624 13.4032C29.1621 13.9242 29.4553 14.5187 29.6253 15.1529C29.7952 15.7872 29.8386 16.4487 29.7529 17.0997C29.6672 17.7507 29.4541 18.3784 29.1258 18.947C28.7975 19.5157 28.3604 20.0141 27.8395 20.4138C27.3185 20.8135 26.724 21.1067 26.0897 21.2767L23.192 22.0531M17.3964 23.606L14.4986 24.3825C13.8644 24.5524 13.2029 24.5958 12.5519 24.5101C11.9009 24.4244 11.2732 24.2113 10.7045 23.883C9.55611 23.22 8.71812 22.1279 8.37491 20.847C8.03169 19.5661 8.21137 18.2013 8.87441 17.0529C9.53745 15.9044 10.6295 15.0665 11.9104 14.7232L14.8082 13.9468" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -254,7 +254,7 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">Luvas de borracha</th>
-                                    <td><svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <td class="ocultar"><svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect width="37" height="37" rx="18.5" fill="#FAFAFA"/>
                                         <g clip-path="url(#clip0_127_5547)">
                                         <path d="M20.6038 12.3939L23.5015 11.6174C24.1358 11.4475 24.7973 11.4041 25.4483 11.4898C26.0993 11.5755 26.727 11.7886 27.2956 12.1169C27.8643 12.4452 28.3627 12.8823 28.7624 13.4032C29.1621 13.9242 29.4553 14.5187 29.6253 15.1529C29.7952 15.7872 29.8386 16.4487 29.7529 17.0997C29.6672 17.7507 29.4541 18.3784 29.1258 18.947C28.7975 19.5157 28.3604 20.0141 27.8395 20.4138C27.3185 20.8135 26.724 21.1067 26.0897 21.2767L23.192 22.0531M17.3964 23.606L14.4986 24.3825C13.8644 24.5524 13.2029 24.5958 12.5519 24.5101C11.9009 24.4244 11.2732 24.2113 10.7045 23.883C9.55611 23.22 8.71812 22.1279 8.37491 20.847C8.03169 19.5661 8.21137 18.2013 8.87441 17.0529C9.53745 15.9044 10.6295 15.0665 11.9104 14.7232L14.8082 13.9468" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

@@ -238,3 +238,47 @@ z-index: 2000;
 .profile-genero select{
     width: 60px !important
 }
+
+@media (min-width:250px) and (max-width:800px){
+    
+.card-details-profile-config{
+    background-color: #ffffff;
+    border-radius: 16px;
+    width: 90vw;
+    height: 260px !important;
+    padding: 1% 50px !;
+    display: flex;
+    justify-content: center;
+}
+
+.title-card{
+    display: flex;
+    flex-direction: column !important;
+}
+
+.title-card p{
+    font-size: 12px !important;
+}
+
+.box-card{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-around;
+    height: 80% !important;
+}
+
+.box-card button {
+    margin:8px 0 0 0;
+}
+
+.btn-exit{
+    display: flex;
+    cursor: pointer;
+}
+
+
+.btn-cta-light-green{
+     margin: 16px 0 0 0;
+}
+
+}

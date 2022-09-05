@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/style/table/light-green.css">
     <link rel="stylesheet" href="/style/table/light-blue.css">
         <link rel="stylesheet" href="/style/Tag/tags.css"> <!--tags-->
+        <link rel="stylesheet" href="/style/card/card-requeriment.css">
     <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,14 +28,14 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container v-setor-adm">
         <span class="nav-sm" onclick="clickResponsive()"></span>
         <div class="nav">
             <div>
                 <img src="/img/Logo M.png" alt="">
             </div>
             <ul>
-                <a href="/index.html"> <li >Chamadas</li></a>
+                <a href="/index-enviados.html"> <li >Chamadas</li></a>
                  <a href="/routes/Departamento/Adm/view-membros-adm.html"><li class="pagina-atual">Departamento</li></a>
                  <a href="/routes/index-profile.html"><li>Perfil</li></a>
                  <a href="/routes/index-ajuda.html"><li>Ajuda</li></a> 
@@ -44,13 +45,13 @@
                  <img src="/img/LOGO-rodape.png" alt="">
              </div>
         </div>
-        <div class="nav-sm-active" id="menu-sm">  <!---Menu Smartphone-->
+        <div class="nav-sm-active" id="menu-sm">  
             <span class="esc" onclick="esc()"></span>
             <div>
                 <img src="/img/Logo M.png" alt="">
             </div>
             <ul>
-                <a href="/index.html"> <li>Chamadas</li></a>
+                <a href="/index-enviados.html"> <li>Chamadas</li></a>
                  <a href="/routes/Departamento/Adm/view-membros-adm.html"><li   class="pagina-atual">Departamento</li></a>
                  <a href="/routes/index-profile.html"><li>Perfil</li></a>
                  <a href="/routes/index-ajuda.html"><li>Ajuda</li></a> 
@@ -61,6 +62,9 @@
                  
              </div>
         </div>
+        <!---menu smartphone-->
+       
+        
 
         <div class="row">
             <div class="col">
@@ -146,7 +150,7 @@
                                             <option value="'">E</option>     
                                         </select></span></span>                                                                     
                                     </th>
-                                    <th scope="col">
+                                    <th scope="col" >
                                         <span>
                                             Membros  <span class="select-style">    
                                          <select> 
@@ -157,7 +161,7 @@
                                             <option value="'">7</option>     
                                         </select></span></span>   
                                         </th>
-                                        <th scope="col">
+                                        <th scope="col" class="ocultar">
                                             <span>
                                                 Local <span class="select-style">    
                                              <select> 
@@ -179,45 +183,49 @@
                                     <th scope="row"> Almoxarifado </th>
                                     <td class="ocultar">Cláudio Luiz</td>
                                     <td>10</td>
-                                    <td>Balneário Camboriú</td>
+                                    <td class="ocultar">Balneário Camboriú</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Financeiro</th>
                                     <td class="ocultar">Jonathan Silva</td>
                                     <td>8</td>  
-                                    <td>Blumenau</td>                          
+                                    <td class="ocultar">Blumenau</td>                          
                                 </tr>
                                 <tr>
                                     <th scope="row">Comercial</th>
                                     <td class="ocultar">Taynara Cristine</td>
                                     <td>7</td>
-                                    <td>Brusque</td>
+                                    <td class="ocultar">Brusque</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">TI</th>
                                     <td class="ocultar">Fernando</td>
                                     <td>4</td>
-                                    <td>Itapema</td>
+                                    <td class="ocultar">Itapema</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Editorial</th>
                                     <td class="ocultar">Kleber Felipe</td>
                                     <td>8</td>
-                                    <td>Florianópolis</td>
+                                    <td class="ocultar">Florianópolis</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    <div class="smartphone-action">
+                        <button id="bta-cta-sm" onclick="window.location.href='add/add.html'">Departamento &nbsp;<img src="/img/add_24px.png" alt=""></button>
+                    </div>
+                    
                     <div class="footer">
                         &nbsp; Todos os direitos reservados ao Centro Universitário Avantis.
         
                     </div>
-                   
+                    <div class="smartphone-action">
+                        <button id="bta-cta-sm" onclick="window.location.href='add/add-membro.html'" > Departamento &nbsp;<img src="/img/add_24px.png" alt=""></button>
+                    </div>
                 </div>
-                <div class="smartphone-action">
-                    <button id="bta-cta-sm" onclick="window.location.href='add/add.html'">Departamento &nbsp;<img src="/img/add_24px.png" alt=""></button>
-                </div>
-
+               
+                
             </div>
             <script src="/js/nav.js"></script>
             <script src="/js/main.js"></script>
