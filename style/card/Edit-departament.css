@@ -76,4 +76,42 @@
         display:none
     }
 
+    .detail{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size:1rem;
+    }
+
+    .detail h5{
+        margin: 28px 0 0 58px;
+       
+    }
+
+    .icon-number{
+        margin:0 0 16px 0;
+    }
+
+   .sm-n{
+    display: flex;
+    flex-direction: column;
+        width: 90vw;
+      
+    }
+
+    .sm-n table{
+        width: 50vw;
+    }
+
+    .sm-n .detail-depart-adm{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin:32px 0 0 0;
+    }
+
+    .detail-depart-adm .input-search{
+        margin:32px 0;
+    }
+
 }

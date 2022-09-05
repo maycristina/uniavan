@@ -222,6 +222,7 @@ input[type=search]::selection{
 .btn-edit-product:hover{
     color:#179928 !important;
 }
+
 .btn-trash{
     text-decoration: none;
     padding: 4px 18px;
@@ -324,3 +325,121 @@ input[type=search]::selection{
 
 }
 
+@media(min-width:250px) and (max-width:800px){
+    .prod_add{
+        display: flex;
+        flex-direction: column;
+        width: 90vw !important;
+     }
+
+    .prod_add .suspenso{
+        margin: 32px 0;
+        
+    }
+
+    .prod_add header{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .prod_add .card-requeriment{
+        width:80vw;
+        width:90vw !important;
+        padding:0 6%;
+    }
+
+
+    .prod_add .card-add-new-product{
+        margin: 0 20px;
+    }
+
+    .prod_add table{
+        width:80vw !important;
+        margin:0 !important;
+
+    }
+
+    .prod_add .bg-table{
+        margin: 0 16px !important; 
+    }
+    .ocultar{
+        display: none;
+    }
+    .v-setor-adm{
+        width: 90vw;
+    }
+    .v-setor-adm .bg-table table{
+        width: 50vw !important;
+       
+    }
+
+    .card-feedback {
+        width: 95vw;
+        padding: 4% 2% 8% 1%;
+        font-size: 1rem;
+    }
+
+    .card-feedback h4 {
+        width: 275px;
+        font-size: 1.1rem;
+    }
+
+    .card-feedback table{
+        width: auto;
+        font-size:1rem;
+    }
+
+    .card-feedback .table td{
+        max-width:8ch;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+    }
+
+    .card-feedback .box-btn{
+        margin:-40px 0 0 0;
+        padding: 0;
+    }
+
+    .card-requeriment{
+        width: 90vw;
+        margin: 0 16px;
+        padding: 0;
+    }
+
+    .new-solicitation header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        padding: 0;
+    }
+
+    .new-solicitation h4{
+        margin:24px 0 0 0; 
+    }
+
+    .box-sm-requeriment{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+    }
+    
+    .box-sm-requeriment select{
+        padding:0 !important;
+    }
+
+    .requeriment header{
+        display: flex;
+        flex-direction: row;
+        width: 80vw;
+    }
+
+    .requeriment .profile-requeriment{
+        width: 200px;
+        margin:0 0 0 -40px;
+    }
+
+  
+
+}

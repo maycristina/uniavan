@@ -65,7 +65,7 @@
   color: #6f727a;
   background-color: #ffffff;
   width: auto;
-  padding: 40px 32px 80px 40px;
+  padding: 40px 32px 80px 40px; 
   border-radius: 16px;
   width: auto;
   margin: 80px 0 0 0;
@@ -127,6 +127,28 @@
 }
 
 
+.edit-profile {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 80px;
+  background: url(/img/profile-2.png) no-repeat center;
+  background-position: center;
+  background-size: 100px;
+  position: absolute;
+  margin: -100px 0 0 0;
+}
+
+.profile {
+  background: url(/img/profile.png) repeat center !important;
+  background-size: contain !important;
+}
+
+.alt svg {
+  margin: 7px 0 0 -22px !important;
+  position: absolute;
+}
+
 
 
 /**/
@@ -158,9 +180,11 @@
   .user p {
     margin: 0 0 0 4px !important;
   }
+
   .box-add-new-member {
     width: 99.99vw !important;
-    padding: 32px 0 16px 0;
+   padding: 0 !important;
+   
     display: flex;
     flex-direction: column;
     justify-content: center !important;
@@ -204,26 +228,26 @@
     width: 90%;
 }
 
+.profile-user{
+  display: flex;
+  flex-direction: column;
+  padding: 0 2%;
+  
 }
 
-.edit-profile {
-  display: block;
-  width: 100px;
-  height: 100px;
-  border-radius: 80px;
-  background: url(/img/profile-2.png) no-repeat center;
-  background-position: center;
-  background-size: 100px;
-  position: absolute;
-  margin: -100px 0 0 0;
+.profile-user header{
+  display: flex;
+  flex-direction: row !important;
 }
 
-.profile {
-  background: url(/img/profile.png) repeat center !important;
-  background-size: contain !important;
-}
+  .profile-user header h4{
+    margin:18px 0 0 0;
+  }
 
-.alt svg {
-  margin: 7px 0 0 -22px !important;
-  position: absolute;
+  .profile-user input{
+    width: 90vw !important;
+    margin:1%;
+  }
+
+   
 }

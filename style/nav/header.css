@@ -1,13 +1,15 @@
 
 .subtitle{
-    width: 60%;
+    
     font-family: 'Lexend';
     font-weight: 300;
+    width: 60%;
 }
 
 .subtitle b{
     font-weight:600;
 }
+
 
 .profile{
     display: block;
@@ -62,7 +64,7 @@ header{
     align-items: center;
     margin:0 !important;
     width: 80vw;
-    padding:2% 0;
+    padding:2%;
     color:#4F4F4F;
     background-color: #FCFCFC;
     font-size:1rem;

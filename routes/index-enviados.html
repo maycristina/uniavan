@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="/style/nav/navbar.css">
     <link rel="stylesheet" href="/style/search/search.css">
     <link rel="stylesheet" href="/style/table/light-green.css">
-    <link rel="stylesheet" href="/style/table/light-green.css">
         <link rel="stylesheet" href="/style/Tag/tags.css"> <!--tags-->
-        <link rel="stylesheet" href="/style/filter/filter.css">
     <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +21,7 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <title>Chamadas/Recebidos</title>
 </head>
 
@@ -34,8 +33,8 @@
                 <img src="/img/Logo M.png" alt="">
             </div>
             <ul>
-                <a href="/index-recebidos.html"> <li class="pagina-atual">Chamadas</li></a>
-                 <a href="/routes/Departamento/gestores/view-membros-gestor.html"><li >Departamento</li></a>
+                <a href="/index.html"> <li class="pagina-atual">Chamadas</li></a>
+                 <a href="/routes/Departamento/Adm/view-membros-adm.html"><li>Departamento</li></a>
                  <a href="/routes/index-profile.html"><li>Perfil</li></a>
                  <a href="/routes/index-ajuda.html"><li>Ajuda</li></a> 
                  <a href="/routes/index-login.html" class="logout"><li>Logout</li></a>
@@ -45,13 +44,13 @@
              </div>
         </div>
 
-        <div class="nav-sm-active" id="menu-sm"> <!---Menu Smartphone-->
+        <div class="nav-sm-active" id="menu-sm">  <!---Menu Smartphone-->
             <span class="esc" onclick="esc()"></span>
             <div>
                 <img src="/img/Logo M.png" alt="">
             </div>
             <ul>
-                <a href="/index-enviados.html"> <li class="pagina-atual">Chamadas</li></a>
+                <a href="/index.html"> <li class="pagina-atual">Chamadas</li></a>
                  <a href="/routes/Departamento/Adm/view-membros-adm.html"><li>Departamento</li></a>
                  <a href="/routes/index-profile.html"><li>Perfil</li></a>
                  <a href="/routes/index-ajuda.html"><li>Ajuda</li></a> 
@@ -64,13 +63,15 @@
         </div>
 
         <div class="row">
+            
             <div class="col">
                 <header>
                     <div class=" pt-4">
-                        <h3>Recebidos</h3>
-                        <p class="subtitle">Nessa aba é possível acessar as <b>solicitações recebidas.</b>
-                             Clique em qualquer item da lista para visualizar mais detalhes sobre o pedido.
-                        </p>
+                        <h3>Enviados</h3>
+                        <p class="subtitle">Nessa aba é possível acessar apenas
+                            <b>suas solicitações.</b> Clique em qualquer item da lista para visualizar mais detalhes
+                            sobre o
+                            pedido.
                         </p>
                     </div>
 
@@ -84,7 +85,7 @@
                             <div class="profile">
                                 <img src="/img/profile.png" alt="">
                             </div>
-                            <div class="notification">
+                            <div class="notification" onclick="newNotication()">
                                 <img src="/img/icon-notification.png" alt="">
                             </div>
                         </div>
@@ -100,39 +101,26 @@
                     <div class="menu">
                         <div class="suspenso">
                             <ul>
-                               <a href="index-enviados.html"><li>Enviados</li></a>
-                               <a class="aba-atual" href="/routes/index-recebidos.html" rel="noopener noreferrer"><li>Recebidos</li></a>
-                                <a href="index-historico.html"><li>Histórico</li></a>
+                                <a href="http://" class="aba-atual"><li>Enviados</li></a>
+                                <a href="/routes/index-recebidos.html"><li>Recebidos</li></a>
+                                <a href="/routes/index-historico.html"><li>Histórico</li></a>
                             </ul>
                         </div>
                     </div>
 
                     <div>
                         <div class="box-menu">
-                            <button id="btn-cta-blue" onclick="NewRequisition()">Nova Solicitação <img src="/img/add_24px.png" alt=""></button>
+                            <button id="btn-cta-blue" onclick="NewRequisitionI()">Nova Solicitação <img src="/img/add_24px.png" alt=""></button>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="row py-5">
-                    <div class="col px-5 d-flex align-items-center">
-                        <button class="filter-order">
-                            <div class="filter-svg"></div>
-                            
-                            <select name="" id="">
-                                
-                                <option value=""></option>
-                                <option value="">Cidade A</option>
-                                <option value="">Cidade B</option>
-                            </select>
-                            Ordernar
-                        </button>
-                    </div>
-                    <div class="col input-search ">
+                <div class="row">
+                    <div class="col input-search pb-4">
                         <input type="text" class="form-control shadow-none" arial-label="exemple" 
                         placeholder="Buscar por título, solicitante, setor, data, status ou prioridade"/>
-                        <button class="btn-search">
+                        <button>
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="rgb(196, 196, 196)" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.5365 11.18L11.6091 11.25H11.71H12.3963L17.1366 15.9998L15.9998 17.1366L11.25 12.3963V11.71V11.6091L11.18 11.5365L10.91 11.2565L10.7461 11.0865L10.567 11.2404C9.47058 12.183 8.04787 12.75 6.5 12.75C3.04807 12.75 0.25 9.95193 0.25 6.5C0.25 3.04807 3.04807 0.25 6.5 0.25C9.95193 0.25 12.75 3.04807 12.75 6.5C12.75 8.04787 12.183 9.47058 11.2404 10.567L11.0865 10.7461L11.2565 10.91L11.5365 11.18ZM1.75 6.5C1.75 9.12807 3.87193 11.25 6.5 11.25C9.12807 11.25 11.25 9.12807 11.25 6.5C11.25 3.87193 9.12807 1.75 6.5 1.75C3.87193 1.75 1.75 3.87193 1.75 6.5Z" fill="#C4C4C4" stroke="white" stroke-width="0.5"/>
                             </svg>
@@ -142,11 +130,12 @@
 
 
                 <div class="row">
-                    <div class="col bg-table px-5 ">
+                    <div class="col bg-table px-5">
                         <table class="table table-light-green mb-5">
                             <thead>
                                 <tr>
-                                    <th scope="col" class="show-title">Título  <span class="select-style-green"> <select> 
+                                    <th class="show-title" scope="col">Título  
+                                        <span class="select-style-green"> <select> 
                                         <option value="'">A</option> 
                                         <option value="'">B</option>    
                                         <option value="'">C</option> 
@@ -191,47 +180,161 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr onclick="itemReceived()">
-                                    <th scope="row">Pedido de compra </th>
-                                    <td>Eduardo</td>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Luiz Inácio</td>
                                     <td>Financeiro Acadêmico</td>
                                     <td>27/11/20</td>
                                     <td>Pendente/Usuário</td>
-                                    <td class="tag-low">Baixa</td>
+                                    <td class="tag-high">Alta</td>
                                 </tr>
-                                <tr onclick="itemReceived()">
-                                    <th scope="row">Pedido de compra </th>
-                                    <td>Marina Silva</td>
-                                    <td>Financeiro Acadêmico</td>
-                                    <td>27/11/20</td>
-                                    <td>Pendente/Usuário</td>
-                                    <td class="tag-medium">Média</td>
-                                </tr>
-                                <tr onclick="itemReceived()">
-                                    <th scope="row">Pedido de compra </th>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
                                     <td>Sidney</td>
                                     <td>Financeiro Acadêmico</td>
                                     <td>27/11/20</td>
                                     <td>Pendente/Usuário</td>
                                     <td class="tag-high">Alta</td>
                                 </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Marina Silva</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-medium">Média</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Marina Silva</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class=" tag-medium">Média</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Eduardo</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr><tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+                                <tr onclick="didItemSend()">
+                                    <th scope="row" class="title-table">Pedido de compra </th>
+                                    <td>Jameson</td>
+                                    <td>Financeiro Acadêmico</td>
+                                    <td>27/11/20</td>
+                                    <td>Pendente/Usuário</td>
+                                    <td class="tag-low">Baixa</td>
+                                </tr>
+
                             </tbody>
                         </table>
                     </div>
-                    <div class="smartphone-action">
-                        <button id="bta-cta-sm" onclick="NewRequisitionI()">Nova Solicitação <img src="/img/add_24px.png" alt=""></button>
-                    </div>
                 </div>
-                
+               
+                <div class="footer">
+                    &nbsp; Todos os direitos reservados ao Centro Universitário Avantis.
+    
+                </div>
+                <div class="smartphone-action">
+                    <button id="bta-cta-sm" onclick="NewRequisitionI()">Nova Solicitação <img src="/img/add_24px.png" alt=""></button>
+                </div>
+            </div>
+                              
             </div>
 
            
-            <div class="footer">
-                &nbsp; Todos os direitos reservados ao Centro Universitário Avantis.
-
-            </div>
-
-          
+           
+            
             <script src="/js/nav.js"></script>
             <script src="/js/main.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
@@ -242,4 +345,4 @@
                 crossorigin="anonymous"></script>
 </body>
 
-</html>
+</html> 
